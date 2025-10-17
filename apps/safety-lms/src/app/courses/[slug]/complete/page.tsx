@@ -138,7 +138,7 @@ export default function CourseCompletePage() {
                 <div>
                   <p className="font-medium">Plant</p>
                   <p className="text-sm text-muted-foreground">
-                    {getPlantName()}
+                    {profile?.plantId || 'N/A'}
                   </p>
                 </div>
               </div>
