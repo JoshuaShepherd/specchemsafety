@@ -21,14 +21,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Modern LMS Colors
+        // SpecChem Brand Colors
         primary: colors.primary.blue,
-        secondary: colors.primary.purple,
+        secondary: colors.primary.yellow,
+        tertiary: colors.primary.tertiary,
         semantic: colors.semantic,
         neutral: colors.neutral,
 
         // shadcn/ui colors (for compatibility)
-        border: "hsl(var(--border))",
+        border: "#e5e7eb", // Neutral gray borders instead of yellow
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",

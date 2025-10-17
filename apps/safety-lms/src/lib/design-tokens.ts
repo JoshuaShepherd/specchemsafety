@@ -8,43 +8,43 @@
 // =============================================================================
 
 export const colors = {
-  // Modern LMS Color Palette
+  // SpecChem Brand Color Palette
   primary: {
     blue: {
-      50: "#EFF6FF",
-      100: "#DBEAFE",
-      200: "#BFDBFE",
-      300: "#93C5FD",
-      400: "#60A5FA",
-      500: "#3B82F6", // Primary Blue
-      600: "#2563EB",
-      700: "#1D4ED8",
-      800: "#1E40AF",
-      900: "#1E3A8A",
+      50: "#E6F0FF",
+      100: "#CCE1FF", 
+      200: "#99C3FF",
+      300: "#66A5FF",
+      400: "#3387FF",
+      500: "#013A81", // SpecChem Primary Brand
+      600: "#012E67",
+      700: "#01224D",
+      800: "#011633",
+      900: "#020747", // SpecChem Tertiary Blue
     },
-    purple: {
-      50: "#FAF5FF",
-      100: "#F3E8FF",
-      200: "#E9D5FF",
-      300: "#D8B4FE",
-      400: "#C084FC",
-      500: "#A855F7", // Secondary Purple
-      600: "#9333EA",
-      700: "#7C3AED",
-      800: "#6B21A8",
-      900: "#581C87",
+    yellow: {
+      50: "#FFF9E6",
+      100: "#FFF3CC",
+      200: "#FFE799",
+      300: "#FFDB66",
+      400: "#FFCF33",
+      500: "#DEB408", // SpecChem Secondary Brand
+      600: "#B89307",
+      700: "#927206",
+      800: "#6C5204",
+      900: "#463103",
     },
-    indigo: {
-      50: "#EEF2FF",
-      100: "#E0E7FF",
-      200: "#C7D2FE",
-      300: "#A5B4FC",
-      400: "#818CF8",
-      500: "#6366F1", // Deep Indigo
-      600: "#4F46E5",
-      700: "#4338CA",
-      800: "#3730A3",
-      900: "#312E81",
+    tertiary: {
+      50: "#E6E7F0",
+      100: "#CCCFE1",
+      200: "#999FC3",
+      300: "#666FA5",
+      400: "#333F87",
+      500: "#020747", // SpecChem Tertiary Blue
+      600: "#020639",
+      700: "#02052B",
+      800: "#01041D",
+      900: "#01030F",
     },
   },
 
@@ -145,16 +145,16 @@ export const colors = {
     0: "#FFFFFF",
     50: "#FAFAFA",
     100: "#F5F5F5",
-    200: "#E5E5E5",
-    300: "#D4D4D4",
+    200: "#e5e7eb", // Neutral gray for borders
+    300: "#d1d5db", // Neutral gray for borders
     400: "#A3A3A3",
-    500: "#737373",
+    500: "#8d8A88", // SpecChem Grey
     600: "#525252",
     700: "#404040",
     800: "#262626",
     900: "#171717",
     950: "#0A0A0A",
-    1000: "#000000",
+    1000: "#000000", // Text is always black
   },
 } as const;
 
