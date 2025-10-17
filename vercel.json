@@ -1,8 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm build",
+  "buildCommand": "cd apps/safety-lms && pnpm build",
   "installCommand": "pnpm install --frozen-lockfile",
   "framework": "nextjs",
+  "outputDirectory": "apps/safety-lms/.next",
   "regions": ["iad1"],
   "functions": {
     "apps/safety-lms/src/app/api/**/*.ts": {
