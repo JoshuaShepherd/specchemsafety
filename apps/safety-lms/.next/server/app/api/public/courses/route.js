@@ -1,10 +1,9 @@
 var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/public/courses/route.js")
-R.c("server/chunks/bdf11_@supabase_node-fetch_lib_index_c5d13751.js")
-R.c("server/chunks/f7813_next_bdad8638._.js")
-R.c("server/chunks/bcdff_tr46_f2ec906a._.js")
-R.c("server/chunks/ffca0_@supabase_auth-js_dist_module_1fa0b667._.js")
-R.c("server/chunks/node_modules__pnpm_97830306._.js")
-R.c("server/chunks/[root-of-the-server]__a9d55d0c._.js")
-R.m("[project]/apps/safety-lms/.next-internal/server/app/api/public/courses/route/actions.js [app-rsc] (server actions loader, ecmascript)")
-R.m("[project]/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/apps/safety-lms/src/app/api/public/courses/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
-module.exports=R.m("[project]/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/apps/safety-lms/src/app/api/public/courses/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports
+R.c("server/chunks/[root-of-the-server]__2701e4cf._.js")
+R.c("server/chunks/node_modules__pnpm_2ae86667._.js")
+R.c("server/chunks/_ce8b871e._.js")
+R.c("server/chunks/[root-of-the-server]__e88f6a67._.js")
+R.c("server/chunks/[root-of-the-server]__8f7d6fba._.js")
+R.m(78540)
+R.m(40917)
+module.exports=R.m(40917).exports

@@ -1,0 +1,3 @@
+module.exports=[3838,a=>{"use strict";a.s(["default",()=>e]);var b=a.i(11755),c=a.i(80150),d=a.i(81953);function e({error:a,reset:e}){return(0,c.useEffect)(()=>{console.error("Application error:",a)},[a]),(0,b.jsxs)("div",{className:"flex flex-col items-center justify-center min-h-[60vh] text-center",children:[(0,b.jsx)("h1",{className:"text-6xl font-bold text-red-600 mb-4",children:"Error"}),(0,b.jsx)("h2",{className:"text-2xl font-semibold text-gray-700 mb-4",children:"Something went wrong"}),(0,b.jsx)("p",{className:"text-gray-600 mb-8",children:"We're sorry, but something unexpected happened."}),(0,b.jsx)(d.Button,{onClick:e,children:"Try Again"})]})}}];
+
+//# sourceMappingURL=apps_safety-lms_src_app_error_tsx_64539183._.js.map
