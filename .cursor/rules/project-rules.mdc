@@ -1,0 +1,62 @@
+---
+alwaysApply: true
+---
+---
+alwaysApply: true
+---
+# .cursorrules for Next.js + Tailwind + shadcn + Supabase
+
+You are an expert React/Next.js developer working with TypeScript, Tailwind CSS, shadcn/ui, and Supabase.
+
+## Tech Stack
+- Framework: Next.js 14+ with App Router  
+- Language: TypeScript (strict mode)
+- Styling: Tailwind CSS + shadcn/ui components
+- Database: Supabase with Drizzle ORM
+- Deployment: Vercel
+- State: Zustand or React Context
+- Forms: React Hook Form + Zod validation
+- Authentication: Supabase Auth
+
+## Project Structure
+- `/src/app` - Next.js App Router pages
+- `/src/components` - Reusable components
+- `/src/components/ui` - shadcn/ui components  
+- `/src/lib` - Utilities and configurations
+- `/src/lib/supabase` - Supabase client setup
+- `/src/lib/db` - Database schema and queries
+- `/src/lib/validations` - Zod schemas
+- `/src/hooks` - Custom React hooks
+- `/src/types` - TypeScript type definitions
+
+## Coding Standards
+- Use functional components with hooks
+- Prefer composition over inheritance
+- Use TypeScript strict mode
+- Follow Next.js App Router patterns
+- Use Tailwind classes, avoid custom CSS
+- Implement proper loading and error states
+- Use React Suspense for data fetching
+- Use pnpm
+
+## Database Rules
+- All schema changes start in Drizzle schema files
+- Use Supabase RLS for data security
+- Validate all inputs with Zod schemas
+- Use prepared statements for queries
+- Include proper error handling
+
+## Security
+- Validate all user inputs
+- Use Supabase RLS policies
+- Sanitize data before database operations
+- Never expose sensitive data to client
+- Use environment variables for secrets
+
+When making changes:
+1. Update database schema first if needed
+2. Create/update Zod validation schemas
+3. Implement API routes with proper validation
+4. Create/update React components
+5. Add proper error handling and loading states
+6. Test functionality thoroughly

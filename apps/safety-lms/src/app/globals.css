@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Modern LMS Color Palette - Light Theme */
+    --background: 255 255 255;
+    --foreground: 23 23 23;
+    --card: 255 255 255;
+    --card-foreground: 23 23 23;
+    --popover: 255 255 255;
+    --popover-foreground: 23 23 23;
+    --primary: 59 130 246;
+    --primary-foreground: 255 255 255;
+    --secondary: 168 85 247;
+    --secondary-foreground: 255 255 255;
+    --muted: 245 245 245;
+    --muted-foreground: 115 115 115;
+    --accent: 245 245 245;
+    --accent-foreground: 23 23 23;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    --border: 229 229 229;
+    --input: 229 229 229;
+    --ring: 59 130 246;
+    --radius: 0.5rem;
+
+    /* Modern LMS Colors */
+    --primary-blue-50: 239 246 255;
+    --primary-blue-100: 219 234 254;
+    --primary-blue-200: 191 219 254;
+    --primary-blue-300: 147 197 253;
+    --primary-blue-400: 96 165 250;
+    --primary-blue-500: 59 130 246;
+    --primary-blue-600: 37 99 235;
+    --primary-blue-700: 29 78 216;
+    --primary-blue-800: 30 64 175;
+    --primary-blue-900: 30 58 138;
+
+    --secondary-purple-50: 250 245 255;
+    --secondary-purple-100: 243 232 255;
+    --secondary-purple-200: 233 213 255;
+    --secondary-purple-300: 216 180 254;
+    --secondary-purple-400: 192 132 252;
+    --secondary-purple-500: 168 85 247;
+    --secondary-purple-600: 147 51 234;
+    --secondary-purple-700: 124 58 237;
+    --secondary-purple-800: 107 33 168;
+    --secondary-purple-900: 88 28 135;
+
+    --accent-orange-500: 249 115 22;
+    --accent-green-500: 34 197 94;
+    --accent-yellow-500: 245 158 11;
+
+    --neutral-0: 255 255 255;
+    --neutral-50: 250 250 250;
+    --neutral-100: 245 245 245;
+    --neutral-200: 229 229 229;
+    --neutral-300: 212 212 212;
+    --neutral-400: 163 163 163;
+    --neutral-500: 115 115 115;
+    --neutral-600: 82 82 82;
+    --neutral-700: 64 64 64;
+    --neutral-800: 38 38 38;
+    --neutral-900: 23 23 23;
+    --neutral-950: 10 10 10;
+    --neutral-1000: 0 0 0;
+
+    /* Chart colors */
+    --chart-1: 59 130 246;
+    --chart-2: 168 85 247;
+    --chart-3: 249 115 22;
+    --chart-4: 34 197 94;
+    --chart-5: 245 158 11;
+  }
+
+  .dark {
+    /* Modern LMS Color Palette - Dark Theme */
+    --background: 23 23 23;
+    --foreground: 250 250 250;
+    --card: 23 23 23;
+    --card-foreground: 250 250 250;
+    --popover: 23 23 23;
+    --popover-foreground: 250 250 250;
+    --primary: 59 130 246;
+    --primary-foreground: 250 250 250;
+    --secondary: 168 85 247;
+    --secondary-foreground: 250 250 250;
+    --muted: 38 38 38;
+    --muted-foreground: 163 163 163;
+    --accent: 38 38 38;
+    --accent-foreground: 250 250 250;
+    --destructive: 239 68 68;
+    --destructive-foreground: 250 250 250;
+    --border: 38 38 38;
+    --input: 38 38 38;
+    --ring: 59 130 246;
+
+    /* Chart colors for dark mode */
+    --chart-1: 59 130 246;
+    --chart-2: 168 85 247;
+    --chart-3: 249 115 22;
+    --chart-4: 34 197 94;
+    --chart-5: 245 158 11;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: "Inter", system-ui, sans-serif;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--muted-foreground) / 0.5);
+  }
+
+  /* Focus styles */
+  .focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px hsl(var(--ring)),
+      0 0 0 4px hsl(var(--background));
+  }
+
+  /* Selection styles */
+  ::selection {
+    background-color: hsl(var(--primary) / 0.2);
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+/* Utility classes */
+.heading-1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+
+.heading-2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+
+.heading-4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+
+.body-large {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.body-regular {
+  font-size: 1rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.body-small {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.container-responsive {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding: 0 2rem;
+  }
+}
+
+.section-spacing {
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding: 3rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-spacing {
+    padding: 4rem 0;
+  }
+}
+
+/* Background pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
+
+/* Shimmer animation for image placeholders */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* Fade in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-sans);
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--muted-foreground) / 0.5);
+  }
+
+  /* Focus styles */
+  .focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px hsl(var(--ring)),
+      0 0 0 4px hsl(var(--background));
+  }
+
+  /* Selection styles */
+  ::selection {
+    background-color: hsl(var(--primary) / 0.2);
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+/* Utility classes */
+.heading-1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+
+.heading-2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+
+.heading-4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+
+.body-large {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.body-regular {
+  font-size: 1rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.body-small {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.container-responsive {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding: 0 2rem;
+  }
+}
+
+.section-spacing {
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding: 3rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-spacing {
+    padding: 4rem 0;
+  }
+}
+
+/* Background pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}

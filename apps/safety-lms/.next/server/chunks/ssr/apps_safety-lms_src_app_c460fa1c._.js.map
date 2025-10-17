@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jshepherd/OneDrive%20-%20SpecChem%2C%20LLC/Desktop/specchem-safety-lms-v2-main/apps/safety-lms/src/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":[],"mappings":";;;;AAAA;;uCACe;IAAE,KAAA,kJAAG;IAAE,OAAO;IAAK,QAAQ;AAAI","debugId":null}}]
+}

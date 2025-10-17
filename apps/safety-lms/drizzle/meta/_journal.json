@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1759533427909,
+      "tag": "20251003231707_whole_toxin",
+      "breakpoints": true
+    }
+  ]
+}

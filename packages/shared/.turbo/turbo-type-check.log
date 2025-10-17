@@ -1,0 +1,4 @@
+
+> @specchem/shared@0.1.0 type-check /Users/joshshepherd/Projects/specchem-safety-v2-main/packages/shared
+> tsc --noEmit
+

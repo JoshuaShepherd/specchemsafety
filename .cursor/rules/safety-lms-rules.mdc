@@ -1,0 +1,539 @@
+---
+alwaysApply: true
+---
+
+# SpecChem Safety LMS - Cursor AI Rules
+
+You are an expert full-stack developer working on the **SpecChem Safety LMS**, a production Next.js application for industrial safety training. You have deep knowledge of this specific codebase.
+
+## Critical Context
+
+### This Application Is
+- **A Learning Management System (LMS)** for HazMat and OSHA safety training
+- **Multi-tenant** with plant-based data isolation
+- **Role-based** with Employee, Manager, and Admin roles
+- **Production-ready** with real users and compliance requirements
+- **Type-safe** using TypeScript strict mode throughout
+
+### Tech Stack (Actual Implementation)
+- **Framework**: Next.js 15.5.4 with App Router + Turbopack
+- **Database**: PostgreSQL via Supabase with Drizzle ORM 0.44+
+- **Auth**: Supabase Auth (DO NOT modify auth.* tables)
+- **Validation**: Zod 4+
+- **UI**: Tailwind CSS 4 + shadcn/ui
+- **State**: React hooks (no Zustand, no Redux)
+- **Package Manager**: pnpm (monorepo)
+
+## Mandatory Architecture Patterns
+
+### 1. The 5-Layer Pattern (ALWAYS FOLLOW)
+
+Every feature MUST follow this exact structure:
+
+```
+1. Schema Layer     → src/lib/db/schema/         (Drizzle tables)
+2. Query Layer      → src/lib/db/queries/        (DB operations)
+3. Mapper Layer     → src/lib/mappers/           (Type transformations)
+4. Validation Layer → src/lib/validations/       (Zod schemas)
+5. API/Service Layer → src/app/api/ or services/ (Business logic)
+```
+
+**Never skip layers.** If adding a new feature:
+1. Start with schema definition
+2. Create query functions
+3. Add mappers for type transformation
+4. Define Zod validation schemas
+5. Implement API routes or services
+
+### 2. Authentication Pattern (ALWAYS USE)
+
+**Every API route** (except `/api/public/*`) MUST start with:
+
+```typescript
+import { serverAuth } from "@/lib/supabase/server";
+
+export async function GET(request: NextRequest) {
+  const { user, profile } = await serverAuth.getCurrentUser();
+  
+  if (!user) {
+    return NextResponse.json(
+      { success: false, error: "Unauthorized" },
+      { status: 401 }
+    );
+  }
+  
+  // Check authorization if needed
+  if (profile?.role !== "admin") {
+    return NextResponse.json(
+      { success: false, error: "Forbidden" },
+      { status: 403 }
+    );
+  }
+  
+  // Proceed with logic...
+}
+```
+
+**Never bypass authentication.** Middleware handles session refresh.
+
+### 3. Response Format (ALWAYS USE)
+
+All API responses MUST follow this exact shape:
+
+```typescript
+// Success
+{
+  success: true,
+  data: T | T[],
+  pagination?: {
+    page: number,
+    limit: number,
+    total: number,
+    totalPages: number,
+    hasNext: boolean,
+    hasPrev: boolean
+  }
+}
+
+// Error
+{
+  success: false,
+  error: string,
+  code?: ErrorCode,
+  details?: ValidationError[]
+}
+```
+
+**Never return inconsistent response formats.**
+
+### 4. Database Query Pattern (ALWAYS USE)
+
+**Use Drizzle ORM exclusively.** Never write raw SQL.
+
+```typescript
+// Import from schema
+import { db } from "@/lib/db";
+import { courses } from "@/lib/db/schema";
+import { eq } from "drizzle-orm";
+
+// Query
+const course = await db.query.courses.findFirst({
+  where: eq(courses.id, courseId),
+  with: {
+    sections: true
+  }
+});
+
+// Insert
+const newCourse = await db.insert(courses)
+  .values({ ...data })
+  .returning();
+```
+
+**Never bypass Drizzle.** It provides type safety and prevents SQL injection.
+
+### 5. Validation Pattern (ALWAYS USE)
+
+**Validate ALL inputs** with Zod schemas from `src/lib/validations/`:
+
+```typescript
+import { createCourseSchema } from "@/lib/validations";
+
+const body = await request.json();
+const validatedData = createCourseSchema.parse(body);
+// Now use validatedData (type-safe)
+```
+
+**Never trust client data without validation.**
+
+## Project-Specific Rules
+
+### Database Schema
+- **Location**: `apps/safety-lms/src/lib/db/schema/`
+- **Pattern**: One file per table (e.g., `courses.ts`, `profiles.ts`)
+- **Exports**: `export const tableName = pgTable(...)`
+- **Types**: `export type TableName = typeof tableName.$inferSelect`
+- **Relations**: Define in same file or `relations.ts`
+- **NEVER modify Supabase auth.* tables**
+- **ALWAYS use uuid for IDs**
+- **ALWAYS include `created_at` and `updated_at`**
+
+### Query Functions
+- **Location**: `apps/safety-lms/src/lib/db/queries/`
+- **Pattern**: One file per entity (e.g., `course-sections.ts`)
+- **Naming**: `getById`, `getAll`, `create`, `update`, `delete`
+- **Return**: Database types (not DTOs)
+- **Export**: Named exports, never default
+
+### Mappers
+- **Location**: `apps/safety-lms/src/lib/mappers/`
+- **Pattern**: One file per entity (e.g., `course-mappers.ts`)
+- **Functions**:
+  - `mapDbToApiResponse` - Transform database → API
+  - `mapApiRequestToDb` - Transform API → database
+  - `mapDbToDto` - Transform database → DTO
+- **Never mix concerns** (DB/API transformations in one mapper)
+
+### Validation Schemas
+- **Location**: `apps/safety-lms/src/lib/validations/`
+- **Pattern**: One file per domain (e.g., `course-category.ts`)
+- **Schemas**:
+  - `entitySchema` - Full entity with all fields
+  - `createEntitySchema` - Omit generated fields (id, timestamps)
+  - `updateEntitySchema` - Partial of create schema
+- **Export types**: `export type EntityDTO = z.infer<typeof entitySchema>`
+
+### API Routes
+- **Location**: `apps/safety-lms/src/app/api/[entity]/route.ts`
+- **HTTP Methods**: Export `GET`, `POST`, `PUT`, `PATCH`, `DELETE`
+- **Pattern**:
+  1. Check authentication
+  2. Validate input
+  3. Check authorization
+  4. Execute business logic
+  5. Return formatted response
+- **Error Handling**: Try-catch with specific error types
+
+### React Components
+- **Server Components by default** (no "use client")
+- **Client Components only when**:
+  - Using React hooks (useState, useEffect, etc.)
+  - Using browser APIs
+  - Handling user interactions
+- **Location**: `apps/safety-lms/src/components/[category]/`
+- **Naming**: PascalCase (e.g., `CourseCard.tsx`)
+- **Props**: TypeScript interfaces, never `any`
+
+### Custom Hooks
+- **Location**: `apps/safety-lms/src/hooks/`
+- **Pattern**: `use[EntityName].ts`
+- **Must include**: "use client" directive
+- **Return shape**:
+  ```typescript
+  return {
+    data: Entity[],
+    loading: boolean,
+    error: string | null,
+    refetch: () => void
+  };
+  ```
+
+## File Naming Conventions
+
+```
+Files:     kebab-case      user-profile.ts
+Components: PascalCase     UserProfile.tsx
+Hooks:      camelCase      useUserProfile.ts
+Types:      PascalCase     UserProfile, CreateUserRequest
+Functions:  camelCase      getUserById, createUser
+Constants:  UPPER_SNAKE    MAX_FILE_SIZE, API_VERSION
+```
+
+## Multi-Tenancy Rules
+
+**This app uses plant-based multi-tenancy:**
+
+- Every data table SHOULD have `plant_id` column
+- Every query SHOULD filter by `plant_id`
+- RLS policies enforce plant isolation
+- **Never expose data across plants** (except for admins)
+- Use `profile.plantId` from authenticated user
+
+```typescript
+// Correct
+const courses = await db.query.courses.findMany({
+  where: eq(courses.plantId, profile.plantId)
+});
+
+// Wrong
+const courses = await db.query.courses.findMany(); // No plant filter!
+```
+
+## Security Rules
+
+### Authentication
+- ✅ **DO** use `serverAuth.getCurrentUser()` in every API route
+- ✅ **DO** check authentication before any operation
+- ❌ **DON'T** bypass middleware
+- ❌ **DON'T** trust client-side data
+
+### Authorization
+- ✅ **DO** check user role before admin operations
+- ✅ **DO** verify plant access for data operations
+- ✅ **DO** use RLS policies (already enabled)
+- ❌ **DON'T** implement authorization in client code only
+
+### Data Validation
+- ✅ **DO** validate ALL inputs with Zod
+- ✅ **DO** sanitize user inputs
+- ✅ **DO** validate file uploads
+- ❌ **DON'T** trust any client data
+- ❌ **DON'T** expose stack traces to clients
+
+### Database
+- ✅ **DO** use Drizzle ORM (prevents SQL injection)
+- ✅ **DO** respect RLS policies
+- ✅ **DO** use transactions for multi-step operations
+- ❌ **DON'T** bypass RLS with service_role key
+- ❌ **DON'T** write raw SQL queries
+
+## Content Block System
+
+**This app has 12 content block types:**
+
+```typescript
+type ContentBlockType = 
+  | "hero"      // Section intros with badges
+  | "text"      // Rich text (markdown/html)
+  | "card"      // Info cards
+  | "image"     // Images with captions
+  | "table"     // Data tables
+  | "list"      // Bulleted/numbered lists
+  | "grid"      // Multi-column layouts
+  | "callout"   // Alerts (info, warning, error, success, tip)
+  | "quote"     // Testimonials
+  | "divider"   // Visual separators
+  | "video"     // Video embeds
+  | "audio";    // Audio embeds
+```
+
+Each type has specific content structure (JSONB):
+- **Validate** content shape with Zod
+- **Render** in `ContentBlockRenderer.tsx`
+- **Never store unsanitized HTML**
+
+## Quiz System
+
+**Two question types:**
+1. **True/False**: `{ type: 'boolean', value: true|false }`
+2. **Multiple Choice**: `{ type: 'multiple_choice', choices: [...] }`
+
+Rules:
+- Correct answers stored in `correct_answer` column (JSONB)
+- User answers in `quiz_attempts` table
+- Validate answer format before storing
+- Return explanation after submission
+
+## Progress Tracking
+
+**Two systems (transitioning):**
+
+1. **Legacy**: `progress` table (course-level)
+2. **New**: `user_progress` table (section-level) ← **Use this**
+
+```typescript
+// Update progress
+await upsertUserProgress({
+  userId: user.id,
+  sectionId: section.id,
+  status: 'completed',
+  timeSpentSeconds: 120,
+  completedAt: new Date()
+});
+```
+
+## Common Mistakes to AVOID
+
+### ❌ Skipping Validation
+```typescript
+// WRONG
+const body = await request.json();
+const course = await createCourse(body); // Not validated!
+
+// RIGHT
+const body = await request.json();
+const validated = createCourseSchema.parse(body);
+const course = await createCourse(validated);
+```
+
+### ❌ Not Checking Auth
+```typescript
+// WRONG
+export async function GET(request: NextRequest) {
+  const courses = await getAllCourses(); // No auth check!
+  return NextResponse.json(courses);
+}
+
+// RIGHT
+export async function GET(request: NextRequest) {
+  const { user } = await serverAuth.getCurrentUser();
+  if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  
+  const courses = await getAllCourses();
+  return NextResponse.json({ success: true, data: courses });
+}
+```
+
+### ❌ Using Raw SQL
+```typescript
+// WRONG
+const result = await db.execute(sql`SELECT * FROM courses WHERE id = ${id}`);
+
+// RIGHT
+const course = await db.query.courses.findFirst({
+  where: eq(courses.id, id)
+});
+```
+
+### ❌ Inconsistent Responses
+```typescript
+// WRONG (different shapes)
+return NextResponse.json(course);
+return NextResponse.json({ data: course });
+return NextResponse.json({ course });
+
+// RIGHT (consistent)
+return NextResponse.json({ success: true, data: course });
+```
+
+### ❌ "use client" Everywhere
+```typescript
+// WRONG
+"use client"
+export default function CoursePage() {
+  return <div>Static content</div>; // No client features!
+}
+
+// RIGHT
+export default function CoursePage() {
+  return <div>Static content</div>; // Server component
+}
+```
+
+## When Adding New Features
+
+1. **Read the docs first**:
+   - `docs/PROJECT_OVERVIEW.md` - Architecture
+   - `docs/DEVELOPMENT_GUIDE.md` - Patterns & examples
+   - `docs/DATABASE_SCHEMA.md` - Schema reference
+   - `docs/API_ARCHITECTURE.md` - API patterns
+
+2. **Follow the 5-layer pattern** (schema → query → mapper → validation → API)
+
+3. **Look for existing patterns**:
+   - Check similar entities (e.g., if adding categories, look at courses)
+   - Reuse existing utilities and helpers
+   - Follow established naming conventions
+
+4. **Test thoroughly**:
+   - Test authentication flow
+   - Test authorization (different roles)
+   - Test validation errors
+   - Test with real data
+
+5. **Update types**:
+   - Run migrations: `pnpm db:generate` → `pnpm db:migrate`
+   - Regenerate types if needed
+   - Fix TypeScript errors
+
+## Environment-Specific Notes
+
+### Development
+- Use `.env.local` (never commit)
+- Supabase project: `radbukphijxenmgiljtu`
+- Local: http://localhost:3000
+- Use `pnpm db:studio` to inspect database
+
+### Production
+- Environment variables in Vercel
+- Migrations auto-run on deploy
+- Monitor Supabase logs for errors
+- RLS policies strictly enforced
+
+## Debugging Tips
+
+### Server Errors
+1. Check terminal output (Next.js server logs)
+2. Check Supabase logs (Database → Logs)
+3. Use Drizzle Studio (`pnpm db:studio`)
+4. Verify RLS policies in Supabase dashboard
+
+### Client Errors
+1. Check browser console
+2. Check Network tab (API responses)
+3. Use React DevTools
+4. Verify authentication cookies
+
+### Type Errors
+1. Run `pnpm type-check`
+2. Check for missing imports
+3. Verify schema exports
+4. Regenerate types if schema changed
+
+## Code Quality Standards
+
+### TypeScript
+- **Always** use strict mode
+- **Never** use `any` (use `unknown` if needed)
+- **Always** define return types for functions
+- **Always** define prop types for components
+
+### Error Handling
+```typescript
+try {
+  // Operation
+} catch (error) {
+  console.error("Context:", error);
+  
+  if (error instanceof z.ZodError) {
+    return NextResponse.json({
+      success: false,
+      error: "Validation error",
+      details: error.errors
+    }, { status: 400 });
+  }
+  
+  return NextResponse.json({
+    success: false,
+    error: "Internal server error"
+  }, { status: 500 });
+}
+```
+
+### Logging
+- **DO** log errors with context
+- **DO** log important operations (audit trail)
+- **DON'T** log sensitive data (passwords, tokens)
+- **DON'T** log in production (use proper monitoring)
+
+## Performance Best Practices
+
+### Database
+- Use indexes on frequently queried columns
+- Implement pagination for large datasets
+- Use `with` for eager loading (avoid N+1)
+- Cache static data when possible
+
+### React
+- Server Components by default (faster)
+- Client Components only when necessary
+- Use `loading.tsx` for loading states
+- Use `error.tsx` for error boundaries
+
+### API
+- Implement pagination (default: 20 items)
+- Return only needed fields
+- Use Supabase RLS (database-level filtering)
+- Cache responses when appropriate
+
+## Remember
+
+1. **This is a production app** with real users and compliance requirements
+2. **Security is critical** - validate everything, check auth always
+3. **Type safety is mandatory** - use TypeScript strictly
+4. **Follow established patterns** - don't invent new architectures
+5. **Multi-tenancy is enforced** - always filter by plant_id
+6. **RLS policies are active** - respect them, don't bypass
+7. **Consistency matters** - follow naming conventions and response formats
+
+## When In Doubt
+
+1. Check existing similar code
+2. Read the documentation in `/docs`
+3. Look at the schema definitions
+4. Follow the 5-layer pattern
+5. Ask before breaking established patterns
+
+---
+
+**This is the ultimate source of truth for this codebase. Follow these rules strictly.**

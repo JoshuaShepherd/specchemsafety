@@ -1,0 +1,17 @@
+{
+  "/api/courses/[slug]/sections/[sectionId]/content/route": "app/api/courses/[slug]/sections/[sectionId]/content/route.js",
+  "/api/courses/[slug]/sections/route": "app/api/courses/[slug]/sections/route.js",
+  "/api/public/courses/route": "app/api/public/courses/route.js",
+  "/api/stats/dashboard/route": "app/api/stats/dashboard/route.js",
+  "/api/translations/[courseId]/route": "app/api/translations/[courseId]/route.js",
+  "/api/translations/section/[sectionId]/route": "app/api/translations/section/[sectionId]/route.js",
+  "/api/user-progress/route": "app/api/user-progress/route.js",
+  "/courses/[slug]/learn/[sectionId]/page": "app/courses/[slug]/learn/[sectionId]/page.js",
+  "/courses/[slug]/learn/page": "app/courses/[slug]/learn/page.js",
+  "/courses/[slug]/page": "app/courses/[slug]/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/enrollments/page": "app/enrollments/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/reports/page": "app/reports/page.js",
+  "/users/page": "app/users/page.js"
+}

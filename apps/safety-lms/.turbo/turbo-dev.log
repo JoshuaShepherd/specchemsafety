@@ -1,0 +1,2229 @@
+
+> @specchem/safety@0.1.0 dev /Users/joshshepherd/Projects/specchem-safety-v2-main/apps/safety-lms
+> next dev --turbopack
+
+   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.23.137:3000
+   - Environments: .env.local
+
+ [32m[1m✓[22m[39m Starting...
+Creating turbopack project {
+  dir: [32m'/Users/joshshepherd/Projects/specchem-safety-v2-main/apps/safety-lms'[39m,
+  testMode: [33mtrue[39m
+}
+ [32m[1m✓[22m[39m Compiled middleware in 130ms
+ [32m[1m✓[22m[39m Ready in 910ms
+ [37m[1m○[22m[39m Compiling / ...
+
+[2m[50.11ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.03ms][22m  [2m ↳ [22mQuick bail check
+[2m[11.33ms][22m  [2m ↳ [22mSetup compiler
+[2m[ 0.25ms][22m    [2m ↳ [22mPostCSS AST -> Tailwind CSS AST
+[2m[11.06ms][22m    [2m ↳ [22mCreate compiler
+[2m[ 0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.84ms][22m  [2m ↳ [22mSetup scanner
+[2m[ 8.12ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.17ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[16.14ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 2.48ms][22m  [2m ↳ [22mTransform Tailwind CSS AST into PostCSS AST
+[2m[ 1.73ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled / in 1091ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET / [34m307[39m in 1288ms
+ [32m[1m✓[22m[39m Compiled /auth/login in 322ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /auth/login. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /auth/login [32m200[39m in 421ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 345ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /dashboard [32m200[39m in 382ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /dashboard [32m200[39m in 52ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /dashboard [32m200[39m in 23ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /dashboard [32m200[39m in 104ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 88ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 332ms
+ [32m[1m✓[22m[39m Compiled /courses in 191ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 250ms
+ [32m[1m✓[22m[39m Compiled /api/courses in 324ms
+ [31m[1m⨯[22m[39m ./apps/safety-lms/src/lib/db/queries/content-blocks.ts:3:1
+Export [32mcontentBlocks[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   contentBlocks[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   [33mContentBlock[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mNewContentBlock[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mContentBlockType[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m
+ [90m 11 |[39m [90m/**[39m
+ [90m 12 |[39m [90m * Content Block Query Operations[39m[0m
+
+The export [32mcontentBlocks[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mcontacts[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/content-blocks.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/course-sections.ts:3:1
+Export [32mcontentBlocks[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   contentBlocks[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mNewCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Course Section Query Operations[39m[0m
+
+The export [32mcontentBlocks[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mcontacts[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/course-sections.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/course-sections.ts:3:1
+Export [32mcourseSections[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   contentBlocks[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mNewCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Course Section Query Operations[39m[0m
+
+The export [32mcourseSections[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mcoursesRelations[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/course-sections.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/user-progress.ts:3:1
+Export [32mcourseSections[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql[33m,[39m gte[33m,[39m lte } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   userProgress[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mUserProgress[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mNewUserProgress[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m
+ [90m 11 |[39m [90m/**[39m
+ [90m 12 |[39m [90m * User Progress Query Operations[39m[0m
+
+The export [32mcourseSections[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mcoursesRelations[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/user-progress.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/app/api/user-progress/route.ts:10:1
+Export [32mlmsContentService[39m doesn't exist in target module
+[0m [90m  8 |[39m } [36mfrom[39m [32m"@/lib/types/api-contracts"[39m[33m;[39m
+ [90m  9 |[39m [36mimport[39m { z } [36mfrom[39m [32m"zod"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { lmsContentService } [36mfrom[39m [32m"@/lib/services/lms-content-service"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m// User progress creation schema[39m
+ [90m 13 |[39m [36mconst[39m createUserProgressSchema [33m=[39m z[33m.[39mobject({[0m
+
+The export [32mlmsContentService[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/services/lms-content-service.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mgetCourseContentService[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+
+./apps/safety-lms/src/lib/db/queries/quiz-questions.ts:3:1
+Export [32mquizAttempts[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   quizAttempts[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mQuizQuestion[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mNewQuizQuestion[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mQuestionType[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Quiz Question Query Operations[39m[0m
+
+The export [32mquizAttempts[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mquestionEvents[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/quiz-questions.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/course-sections.ts:3:1
+Export [32mquizQuestions[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   contentBlocks[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mNewCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Course Section Query Operations[39m[0m
+
+The export [32mquizQuestions[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mquestionEvents[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/course-sections.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/quiz-questions.ts:3:1
+Export [32mquizQuestions[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   quizAttempts[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mQuizQuestion[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mNewQuizQuestion[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mQuestionType[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Quiz Question Query Operations[39m[0m
+
+The export [32mquizQuestions[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mquestionEvents[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/quiz-questions.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/user-progress.ts:3:1
+Export [32muserProgress[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql[33m,[39m gte[33m,[39m lte } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   userProgress[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mUserProgress[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mNewUserProgress[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m
+ [90m 11 |[39m [90m/**[39m
+ [90m 12 |[39m [90m * User Progress Query Operations[39m[0m
+
+The export [32muserProgress[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32muserProfiles[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/user-progress.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 583ms
+ GET /api/user-progress? [31m500[39m in 963ms
+ [31m[1m⨯[22m[39m ./apps/safety-lms/src/lib/db/queries/content-blocks.ts:3:1
+Export [32mcontentBlocks[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   contentBlocks[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   [33mContentBlock[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mNewContentBlock[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mContentBlockType[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m
+ [90m 11 |[39m [90m/**[39m
+ [90m 12 |[39m [90m * Content Block Query Operations[39m[0m
+
+The export [32mcontentBlocks[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mcontacts[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/content-blocks.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/course-sections.ts:3:1
+Export [32mcontentBlocks[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   contentBlocks[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mNewCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Course Section Query Operations[39m[0m
+
+The export [32mcontentBlocks[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mcontacts[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/course-sections.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/course-sections.ts:3:1
+Export [32mcourseSections[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   contentBlocks[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mNewCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Course Section Query Operations[39m[0m
+
+The export [32mcourseSections[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mcoursesRelations[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/course-sections.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/user-progress.ts:3:1
+Export [32mcourseSections[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql[33m,[39m gte[33m,[39m lte } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   userProgress[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mUserProgress[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mNewUserProgress[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m
+ [90m 11 |[39m [90m/**[39m
+ [90m 12 |[39m [90m * User Progress Query Operations[39m[0m
+
+The export [32mcourseSections[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mcoursesRelations[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/user-progress.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/app/api/user-progress/route.ts:10:1
+Export [32mlmsContentService[39m doesn't exist in target module
+[0m [90m  8 |[39m } [36mfrom[39m [32m"@/lib/types/api-contracts"[39m[33m;[39m
+ [90m  9 |[39m [36mimport[39m { z } [36mfrom[39m [32m"zod"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { lmsContentService } [36mfrom[39m [32m"@/lib/services/lms-content-service"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m// User progress creation schema[39m
+ [90m 13 |[39m [36mconst[39m createUserProgressSchema [33m=[39m z[33m.[39mobject({[0m
+
+The export [32mlmsContentService[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/services/lms-content-service.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mgetCourseContentService[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+
+./apps/safety-lms/src/lib/db/queries/quiz-questions.ts:3:1
+Export [32mquizAttempts[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   quizAttempts[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mQuizQuestion[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mNewQuizQuestion[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mQuestionType[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Quiz Question Query Operations[39m[0m
+
+The export [32mquizAttempts[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mquestionEvents[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/quiz-questions.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/course-sections.ts:3:1
+Export [32mquizQuestions[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   contentBlocks[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mNewCourseSection[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Course Section Query Operations[39m[0m
+
+The export [32mquizQuestions[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mquestionEvents[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/course-sections.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/quiz-questions.ts:3:1
+Export [32mquizQuestions[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   quizQuestions[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   quizAttempts[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mQuizQuestion[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mNewQuizQuestion[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m   [33mQuestionType[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 10 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m/**[39m
+ [90m 13 |[39m [90m * Quiz Question Query Operations[39m[0m
+
+The export [32mquizQuestions[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mquestionEvents[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/quiz-questions.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+
+./apps/safety-lms/src/lib/db/queries/user-progress.ts:3:1
+Export [32muserProgress[39m doesn't exist in target module
+[0m [90m  1 |[39m [36mimport[39m { eq[33m,[39m and[33m,[39m desc[33m,[39m asc[33m,[39m sql[33m,[39m gte[33m,[39m lte } [36mfrom[39m [32m"drizzle-orm"[39m[33m;[39m
+ [90m  2 |[39m [36mimport[39m { db } [36mfrom[39m [32m"../index"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  3 |[39m [36mimport[39m {
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  4 |[39m   userProgress[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  5 |[39m   courses[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  6 |[39m   courseSections[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  7 |[39m   [33mUserProgress[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  8 |[39m   [33mNewUserProgress[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m  9 |[39m } [36mfrom[39m [32m"../schema"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m
+ [90m 11 |[39m [90m/**[39m
+ [90m 12 |[39m [90m * User Progress Query Operations[39m[0m
+
+The export [32muserProgress[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/db/schema/index.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32muserProfiles[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./apps/safety-lms/src/lib/db/queries/user-progress.ts
+    ./apps/safety-lms/src/lib/services/lms-content-service.ts
+    ./apps/safety-lms/src/app/api/user-progress/route.ts
+
+
+ GET /api/user-progress? [31m500[39m in 41ms
+ GET /api/courses [32m200[39m in 1436ms
+ GET /api/courses [32m200[39m in 802ms
+
+[2m[36.23ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.02ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 1.39ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[17.75ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 7.45ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 3.21ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 3.91ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.66ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.26ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.11ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.91ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[1.00ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.94ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.43ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.33ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[5.20ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.61ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.34ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.74ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[17.44ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 7.46ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.36ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 3.41ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 2.03ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[34.80ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.11ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.50ms][22m  [2m ↳ [22mScan for candidates
+[2m[18.40ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 6.82ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 3.81ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[11.31ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.10ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.83ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 3.53ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.40ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.33ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[17.85ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 8.77ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.28ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 3.89ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.73ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.99ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.07ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[5.16ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.67ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.62ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.33ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[7.66ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.91ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.85ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.36ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.43ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[17.20ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.10ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 8.83ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.63ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 4.00ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.53ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[10.15ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.12ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 6.02ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.78ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.60ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.50ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[10.96ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.70ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.31ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.45ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.39ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[12.57ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.80ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 3.33ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.28ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.46ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[11.53ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.02ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 5.52ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.51ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.31ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[6.36ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.69ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.98ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.33ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.22ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[5.76ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.01ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.98ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.31ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[12.71ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 6.90ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.34ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.23ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.08ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[6.02ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.97ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.42ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.30ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[13.07ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.10ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 8.49ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.69ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.38ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.33ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.00ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.17ms][22m  [2m ↳ [22mScan for candidates
+[2m[4.12ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.34ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.72ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[5.92ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.16ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.24ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.30ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[12.08ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 6.82ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.28ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.96ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.82ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.38ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.33ms][22m  [2m ↳ [22mScan for candidates
+[2m[4.68ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.48ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.78ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[7.40ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.79ms][22m  [2m ↳ [22mScan for candidates
+[2m[1.94ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.31ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.03ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.32ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.20ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.82ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.35ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[6.70ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.87ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.14ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.34ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[5.81ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.10ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.98ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.14ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.24ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.31ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[20.09ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 4.71ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.39ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 4.10ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 6.24ms][22m  [2m ↳ [22mTransform Tailwind CSS AST into PostCSS AST
+[2m[ 0.46ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[10.12ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.17ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 3.43ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.58ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.76ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 105ms
+
+[2m[7.47ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.42ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.35ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.32ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[10.86ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.18ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.56ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.42ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.84ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.78ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[14.54ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.12ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 7.89ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 5.75ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.39ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[7.27ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.72ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.61ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.30ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.35ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.50ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.78ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.63ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.24ms][22m  [2m ↳ [22mBuild utilities
+[2m[1.72ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[5.49ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.75ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.01ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.35ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[26.81ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.65ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 4.95ms][22m  [2m ↳ [22mScan for candidates
+[2m[11.76ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.11ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 8.22ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[43.45ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 3.32ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[10.24ms][22m  [2m ↳ [22mScan for candidates
+[2m[24.43ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.73ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 4.62ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [31m[1m⨯[22m[39m ./apps/safety-lms/src/app/api/user-progress/route.ts:10:1
+Export [32mlmsContentService[39m doesn't exist in target module
+[0m [90m  8 |[39m } [36mfrom[39m [32m"@/lib/types/api-contracts"[39m[33m;[39m
+ [90m  9 |[39m [36mimport[39m { z } [36mfrom[39m [32m"zod"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { lmsContentService } [36mfrom[39m [32m"@/lib/services/lms-content-service"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m// User progress creation schema[39m
+ [90m 13 |[39m [36mconst[39m createUserProgressSchema [33m=[39m z[33m.[39mobject({[0m
+
+The export [32mlmsContentService[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/services/lms-content-service.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mgetCourseContentService[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /api/user-progress? [31m500[39m in 44ms
+ GET /api/courses [32m200[39m in 716ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 89ms
+ GET /favicon.ico?favicon.0b3bf435.ico [31m500[39m in 33ms
+ [31m[1m⨯[22m[39m ./apps/safety-lms/src/app/api/user-progress/route.ts:10:1
+Export [32mlmsContentService[39m doesn't exist in target module
+[0m [90m  8 |[39m } [36mfrom[39m [32m"@/lib/types/api-contracts"[39m[33m;[39m
+ [90m  9 |[39m [36mimport[39m { z } [36mfrom[39m [32m"zod"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { lmsContentService } [36mfrom[39m [32m"@/lib/services/lms-content-service"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m// User progress creation schema[39m
+ [90m 13 |[39m [36mconst[39m createUserProgressSchema [33m=[39m z[33m.[39mobject({[0m
+
+The export [32mlmsContentService[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/services/lms-content-service.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mgetCourseContentService[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /api/user-progress? [31m500[39m in 22ms
+ [31m[1m⨯[22m[39m ./apps/safety-lms/src/app/api/user-progress/route.ts:10:1
+Export [32mlmsContentService[39m doesn't exist in target module
+[0m [90m  8 |[39m } [36mfrom[39m [32m"@/lib/types/api-contracts"[39m[33m;[39m
+ [90m  9 |[39m [36mimport[39m { z } [36mfrom[39m [32m"zod"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { lmsContentService } [36mfrom[39m [32m"@/lib/services/lms-content-service"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m// User progress creation schema[39m
+ [90m 13 |[39m [36mconst[39m createUserProgressSchema [33m=[39m z[33m.[39mobject({[0m
+
+The export [32mlmsContentService[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/services/lms-content-service.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mgetCourseContentService[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /api/user-progress? [31m500[39m in 34ms
+ GET /api/courses [32m200[39m in 755ms
+ GET /api/courses [32m200[39m in 876ms
+
+[2m[44.19ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.39ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 1.31ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[17.42ms][22m  [2m ↳ [22mScan for candidates
+[2m[14.02ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 2.81ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 7.65ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[15.15ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 6.19ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 6.99ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.49ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.31ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 68ms
+ GET /favicon.ico?favicon.0b3bf435.ico [31m500[39m in 83ms
+ [31m[1m⨯[22m[39m ./apps/safety-lms/src/app/api/user-progress/route.ts:10:1
+Export [32mlmsContentService[39m doesn't exist in target module
+[0m [90m  8 |[39m } [36mfrom[39m [32m"@/lib/types/api-contracts"[39m[33m;[39m
+ [90m  9 |[39m [36mimport[39m { z } [36mfrom[39m [32m"zod"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { lmsContentService } [36mfrom[39m [32m"@/lib/services/lms-content-service"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m// User progress creation schema[39m
+ [90m 13 |[39m [36mconst[39m createUserProgressSchema [33m=[39m z[33m.[39mobject({[0m
+
+The export [32mlmsContentService[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/services/lms-content-service.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mgetCourseContentService[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /api/user-progress? [31m500[39m in 25ms
+ [31m[1m⨯[22m[39m ./apps/safety-lms/src/app/api/user-progress/route.ts:10:1
+Export [32mlmsContentService[39m doesn't exist in target module
+[0m [90m  8 |[39m } [36mfrom[39m [32m"@/lib/types/api-contracts"[39m[33m;[39m
+ [90m  9 |[39m [36mimport[39m { z } [36mfrom[39m [32m"zod"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 10 |[39m [36mimport[39m { lmsContentService } [36mfrom[39m [32m"@/lib/services/lms-content-service"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [90m// User progress creation schema[39m
+ [90m 13 |[39m [36mconst[39m createUserProgressSchema [33m=[39m z[33m.[39mobject({[0m
+
+The export [32mlmsContentService[39m was not found in module [1m[31m[project]/apps/safety-lms/src/lib/services/lms-content-service.ts [app-route] (ecmascript)[39m[22m.
+Did you mean to import [32mgetCourseContentService[39m?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /api/user-progress? [31m500[39m in 22ms
+ GET /api/courses [32m200[39m in 797ms
+ GET /api/courses [32m200[39m in 634ms
+
+[2m[20.64ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.76ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[13.96ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.27ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 2.29ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.23ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[6.93ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.19ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.29ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[1.01ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[6.80ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.86ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.01ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.27ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.54ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[6.02ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.12ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.79ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.17ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.63ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ GET /api/user-progress? [32m200[39m in 562ms
+ GET /api/courses [32m200[39m in 779ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 70ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 241ms
+ GET /api/user-progress? [32m200[39m in 443ms
+ GET /api/courses [32m200[39m in 696ms
+ GET /api/user-progress? [32m200[39m in 630ms
+ GET /api/courses [32m200[39m in 624ms
+
+[2m[22.23ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.03ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 1.12ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[12.44ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.51ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.07ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 2.67ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[42.93ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[23.24ms][22m  [2m ↳ [22mScan for candidates
+[2m[11.63ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.29ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 7.62ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 198ms
+ GET /api/courses [32m200[39m in 846ms
+ GET /api/user-progress? [32m200[39m in 475ms
+ GET /api/courses [32m200[39m in 603ms
+ GET /api/courses [32m200[39m in 660ms
+ GET /api/courses [32m200[39m in 746ms
+ GET /api/courses [32m200[39m in 637ms
+ GET /api/courses [32m200[39m in 730ms
+ GET /api/courses [32m200[39m in 642ms
+ GET /api/courses [32m200[39m in 635ms
+ GET /api/courses [32m200[39m in 701ms
+ GET /api/courses [32m200[39m in 696ms
+ GET /api/courses [32m200[39m in 625ms
+ GET /api/courses [32m200[39m in 686ms
+ GET /api/courses [32m200[39m in 713ms
+ GET /api/courses [32m200[39m in 682ms
+ GET /api/courses [32m200[39m in 657ms
+ GET /api/courses [32m200[39m in 707ms
+ GET /api/courses [32m200[39m in 639ms
+ GET /api/courses [32m200[39m in 698ms
+ GET /api/courses [32m200[39m in 753ms
+ GET /api/courses [32m200[39m in 638ms
+ GET /api/courses [32m200[39m in 618ms
+ GET /api/courses [32m200[39m in 650ms
+ GET /api/courses [32m200[39m in 633ms
+ GET /api/courses [32m200[39m in 686ms
+ GET /api/courses [32m200[39m in 643ms
+ GET /api/courses [32m200[39m in 635ms
+ GET /api/courses [32m200[39m in 639ms
+ GET /api/courses [32m200[39m in 670ms
+ GET /api/courses [32m200[39m in 667ms
+ GET /api/courses [32m200[39m in 631ms
+ GET /api/courses [32m200[39m in 669ms
+
+[2m[7.49ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.22ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.08ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.29ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.74ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[6.81ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.62ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.22ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.24ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.61ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ GET /api/courses [32m200[39m in 721ms
+ GET /api/courses [32m200[39m in 708ms
+ GET /api/courses [32m200[39m in 646ms
+ GET /api/courses [32m200[39m in 678ms
+ GET /api/courses [32m200[39m in 683ms
+ GET /api/courses [32m200[39m in 662ms
+ GET /api/courses [32m200[39m in 686ms
+ GET /api/courses [32m200[39m in 690ms
+ GET /api/courses [32m200[39m in 681ms
+ GET /api/courses [32m200[39m in 655ms
+ GET /api/courses [32m200[39m in 706ms
+ GET /api/courses [32m200[39m in 654ms
+ GET /api/courses [32m200[39m in 701ms
+ GET /api/courses [32m200[39m in 668ms
+ GET /api/courses [32m200[39m in 754ms
+ GET /api/courses [32m200[39m in 733ms
+ GET /api/courses [32m200[39m in 692ms
+ GET /api/courses [32m200[39m in 713ms
+ GET /api/courses [32m200[39m in 878ms
+ GET /api/courses [32m200[39m in 662ms
+ GET /api/courses [32m200[39m in 635ms
+ GET /api/courses [32m200[39m in 745ms
+ GET /api/courses [32m200[39m in 817ms
+ GET /api/courses [32m200[39m in 695ms
+ GET /api/courses [32m200[39m in 772ms
+ GET /api/courses [32m200[39m in 792ms
+ GET /api/courses [32m200[39m in 687ms
+ GET /api/courses [32m200[39m in 651ms
+ GET /api/courses [32m200[39m in 655ms
+ GET /api/courses [32m200[39m in 618ms
+ GET /api/courses [32m200[39m in 649ms
+ GET /api/courses [32m200[39m in 651ms
+ GET /api/courses [32m200[39m in 609ms
+ GET /api/courses [32m200[39m in 615ms
+ GET /api/courses [32m200[39m in 780ms
+ GET /api/courses [32m200[39m in 682ms
+ GET /api/courses [32m200[39m in 613ms
+ GET /api/courses [32m200[39m in 752ms
+ GET /api/courses [32m200[39m in 623ms
+ GET /api/courses [32m200[39m in 683ms
+ GET /api/courses [32m200[39m in 697ms
+ GET /api/courses [32m200[39m in 639ms
+ GET /api/courses [32m200[39m in 686ms
+ GET /api/courses [32m200[39m in 656ms
+ GET /api/courses [32m200[39m in 656ms
+ GET /api/courses [32m200[39m in 638ms
+ GET /api/courses [32m200[39m in 654ms
+ GET /api/courses [32m200[39m in 738ms
+ GET /api/courses [32m200[39m in 653ms
+ GET /api/courses [32m200[39m in 639ms
+ GET /api/courses [32m200[39m in 646ms
+ GET /api/courses [32m200[39m in 625ms
+ GET /api/courses [32m200[39m in 729ms
+ GET /api/courses [32m200[39m in 715ms
+ GET /api/courses [32m200[39m in 592ms
+ GET /api/courses [32m200[39m in 733ms
+ GET /api/courses [32m200[39m in 644ms
+ GET /api/courses [32m200[39m in 667ms
+ GET /api/courses [32m200[39m in 708ms
+ GET /api/courses [32m200[39m in 716ms
+ GET /api/courses [32m200[39m in 671ms
+ GET /api/courses [32m200[39m in 621ms
+ GET /api/courses [32m200[39m in 648ms
+ GET /api/courses [32m200[39m in 705ms
+ GET /api/courses [32m200[39m in 601ms
+ GET /api/courses [32m200[39m in 906ms
+ GET /api/courses [32m200[39m in 699ms
+ GET /api/courses [32m200[39m in 691ms
+ GET /api/courses [32m200[39m in 706ms
+ GET /api/courses [32m200[39m in 781ms
+ GET /api/courses [32m200[39m in 735ms
+ GET /api/courses [32m200[39m in 672ms
+ GET /api/courses [32m200[39m in 698ms
+ GET /api/courses [32m200[39m in 663ms
+ GET /api/courses [32m200[39m in 683ms
+ GET /api/courses [32m200[39m in 656ms
+ GET /api/courses [32m200[39m in 747ms
+ GET /api/courses [32m200[39m in 788ms
+ GET /api/courses [32m200[39m in 701ms
+ GET /api/courses [32m200[39m in 667ms
+ GET /api/courses [32m200[39m in 665ms
+ GET /api/courses [32m200[39m in 665ms
+ GET /api/courses [32m200[39m in 661ms
+ GET /api/courses [32m200[39m in 878ms
+ GET /api/courses [32m200[39m in 702ms
+ GET /api/courses [32m200[39m in 677ms
+ GET /api/courses [32m200[39m in 726ms
+ GET /api/courses [32m200[39m in 828ms
+ GET /api/courses [32m200[39m in 760ms
+ GET /api/courses [32m200[39m in 581ms
+ GET /api/courses [32m200[39m in 771ms
+ GET /api/courses [32m200[39m in 596ms
+ GET /api/courses [32m200[39m in 770ms
+ GET /api/courses [32m200[39m in 738ms
+ GET /api/courses [32m200[39m in 707ms
+ GET /api/courses [32m200[39m in 626ms
+ GET /api/courses [32m200[39m in 661ms
+ GET /api/courses [32m200[39m in 680ms
+ GET /api/courses [32m200[39m in 653ms
+ GET /api/courses [32m200[39m in 678ms
+ GET /api/courses [32m200[39m in 810ms
+ GET /api/courses [32m200[39m in 646ms
+ GET /api/courses [32m200[39m in 816ms
+ GET /api/courses [32m200[39m in 634ms
+ GET /api/courses [32m200[39m in 657ms
+ GET /api/courses [32m200[39m in 715ms
+ GET /api/courses [32m200[39m in 660ms
+ GET /api/courses [32m200[39m in 649ms
+ GET /api/courses [32m200[39m in 679ms
+ GET /api/courses [32m200[39m in 637ms
+ GET /api/courses [32m200[39m in 722ms
+ GET /api/courses [32m200[39m in 622ms
+ GET /api/courses [32m200[39m in 740ms
+ GET /api/courses [32m200[39m in 644ms
+ GET /api/courses [32m200[39m in 663ms
+ GET /api/courses [32m200[39m in 661ms
+ GET /api/courses [32m200[39m in 763ms
+ GET /api/courses [32m200[39m in 668ms
+ GET /api/courses [32m200[39m in 719ms
+ GET /api/courses [32m200[39m in 637ms
+ GET /api/courses [32m200[39m in 751ms
+ GET /api/courses [32m200[39m in 714ms
+ GET /api/courses [32m200[39m in 707ms
+ GET /api/courses [32m200[39m in 599ms
+ GET /api/courses [32m200[39m in 713ms
+ GET /api/courses [32m200[39m in 644ms
+ GET /api/courses [32m200[39m in 622ms
+ GET /api/courses [32m200[39m in 801ms
+ GET /api/courses [32m200[39m in 703ms
+ GET /api/courses [32m200[39m in 648ms
+ GET /api/courses [32m200[39m in 600ms
+ GET /api/courses [32m200[39m in 643ms
+ GET /api/courses [32m200[39m in 719ms
+ GET /api/courses [32m200[39m in 691ms
+ GET /api/courses [32m200[39m in 726ms
+ GET /api/courses [32m200[39m in 596ms
+ GET /api/courses [32m200[39m in 734ms
+ GET /api/courses [32m200[39m in 671ms
+ GET /api/courses [32m200[39m in 670ms
+ GET /api/courses [32m200[39m in 590ms
+ GET /api/courses [32m200[39m in 705ms
+ GET /api/courses [32m200[39m in 753ms
+ GET /api/courses [32m200[39m in 611ms
+ GET /api/courses [32m200[39m in 743ms
+ GET /api/courses [32m200[39m in 669ms
+ GET /api/courses [32m200[39m in 660ms
+ GET /api/courses [32m200[39m in 691ms
+ GET /api/courses [32m200[39m in 672ms
+ GET /api/courses [32m200[39m in 745ms
+ GET /api/courses [32m200[39m in 1073ms
+ GET /api/courses [32m200[39m in 669ms
+ GET /api/courses [32m200[39m in 675ms
+ GET /api/courses [32m200[39m in 800ms
+ GET /api/courses [32m200[39m in 687ms
+ GET /api/courses [32m200[39m in 663ms
+ GET /api/courses [32m200[39m in 644ms
+ GET /api/courses [32m200[39m in 720ms
+ GET /api/courses [32m200[39m in 665ms
+ GET /api/courses [32m200[39m in 638ms
+ GET /api/courses [32m200[39m in 655ms
+ GET /api/courses [32m200[39m in 740ms
+ GET /api/courses [32m200[39m in 685ms
+ GET /api/courses [32m200[39m in 675ms
+ GET /api/courses [32m200[39m in 684ms
+ GET /api/courses [32m200[39m in 773ms
+ GET /api/courses [32m200[39m in 721ms
+ GET /api/courses [32m200[39m in 717ms
+ GET /api/courses [32m200[39m in 628ms
+ GET /api/courses [32m200[39m in 591ms
+ GET /api/courses [32m200[39m in 904ms
+ GET /api/courses [32m200[39m in 693ms
+ GET /api/courses [32m200[39m in 721ms
+ GET /api/courses [32m200[39m in 763ms
+ GET /api/courses [32m200[39m in 693ms
+ GET /api/courses [32m200[39m in 741ms
+ GET /api/courses [32m200[39m in 685ms
+ GET /api/courses [32m200[39m in 744ms
+ GET /api/courses [32m200[39m in 660ms
+ GET /api/courses [32m200[39m in 731ms
+ GET /api/courses [32m200[39m in 611ms
+ GET /api/courses [32m200[39m in 654ms
+ GET /api/courses [32m200[39m in 820ms
+ GET /api/courses [32m200[39m in 690ms
+ GET /api/courses [32m200[39m in 661ms
+ GET /api/courses [32m200[39m in 698ms
+ GET /api/courses [32m200[39m in 866ms
+ GET /api/courses [32m200[39m in 640ms
+ GET /api/courses [32m200[39m in 630ms
+ GET /api/courses [32m200[39m in 666ms
+ GET /api/courses [32m200[39m in 844ms
+ GET /api/courses [32m200[39m in 712ms
+ GET /api/courses [32m200[39m in 665ms
+ GET /api/courses [32m200[39m in 787ms
+ GET /api/courses [32m200[39m in 700ms
+ GET /api/courses [32m200[39m in 749ms
+ GET /api/courses [32m200[39m in 637ms
+ GET /api/courses [32m200[39m in 756ms
+ GET /api/courses [32m200[39m in 694ms
+ GET /api/courses [32m200[39m in 704ms
+ GET /api/courses [32m200[39m in 677ms
+ GET /api/courses [32m200[39m in 672ms
+ GET /api/courses [32m200[39m in 846ms
+ GET /api/courses [32m200[39m in 597ms
+ GET /api/courses [32m200[39m in 633ms
+ GET /api/courses [32m200[39m in 736ms
+ GET /api/courses [32m200[39m in 601ms
+ GET /api/courses [32m200[39m in 643ms
+ GET /api/courses [32m200[39m in 761ms
+ GET /api/courses [32m200[39m in 691ms
+ GET /api/courses [32m200[39m in 763ms
+ GET /api/courses [32m200[39m in 699ms
+ GET /api/courses [32m200[39m in 655ms
+ GET /api/courses [32m200[39m in 665ms
+ GET /api/courses [32m200[39m in 727ms
+ GET /api/courses [32m200[39m in 790ms
+ GET /api/courses [32m200[39m in 803ms
+ GET /api/courses [32m200[39m in 611ms
+ GET /api/courses [32m200[39m in 711ms
+ GET /api/courses [32m200[39m in 662ms
+ GET /api/courses [32m200[39m in 610ms
+ GET /api/courses [32m200[39m in 678ms
+ GET /api/courses [32m200[39m in 736ms
+ GET /api/courses [32m200[39m in 712ms
+ GET /api/courses [32m200[39m in 679ms
+ GET /api/courses [32m200[39m in 679ms
+ GET /api/courses [32m200[39m in 706ms
+ GET /api/courses [32m200[39m in 660ms
+ GET /api/courses [32m200[39m in 749ms
+ GET /api/courses [32m200[39m in 847ms
+ GET /api/courses [32m200[39m in 634ms
+ GET /api/courses [32m200[39m in 726ms
+ GET /api/courses [32m200[39m in 582ms
+ GET /api/courses [32m200[39m in 639ms
+ GET /api/courses [32m200[39m in 716ms
+ GET /api/courses [32m200[39m in 729ms
+ GET /api/courses [32m200[39m in 735ms
+ GET /api/courses [32m200[39m in 696ms
+ GET /api/courses [32m200[39m in 726ms
+ GET /api/courses [32m200[39m in 702ms
+ GET /api/courses [32m200[39m in 1174ms
+ GET /api/courses [32m200[39m in 618ms
+ GET /api/courses [32m200[39m in 606ms
+ GET /api/courses [32m200[39m in 786ms
+ GET /api/courses [32m200[39m in 643ms
+ GET /api/courses [32m200[39m in 650ms
+ GET /api/courses [32m200[39m in 812ms
+ GET /api/courses [32m200[39m in 622ms
+ GET /api/courses [32m200[39m in 717ms
+ GET /api/courses [32m200[39m in 825ms
+ GET /api/courses [32m200[39m in 755ms
+ GET /api/courses [32m200[39m in 848ms
+ GET /api/courses [32m200[39m in 851ms
+ GET /api/courses [32m200[39m in 654ms
+ GET /api/courses [32m200[39m in 644ms
+ GET /api/courses [32m200[39m in 898ms
+ GET /api/courses [32m200[39m in 744ms
+ GET /api/courses [32m200[39m in 803ms
+ GET /api/courses [32m200[39m in 691ms
+ GET /api/courses [32m200[39m in 767ms
+ GET /api/courses [32m200[39m in 707ms
+ GET /api/courses [32m200[39m in 645ms
+ GET /api/courses [32m200[39m in 589ms
+ GET /api/courses [32m200[39m in 861ms
+ GET /api/courses [32m200[39m in 591ms
+ GET /api/courses [32m200[39m in 772ms
+ GET /api/courses [32m200[39m in 784ms
+ GET /api/courses [32m200[39m in 699ms
+ GET /api/courses [32m200[39m in 693ms
+ GET /api/courses [32m200[39m in 743ms
+ GET /api/courses [32m200[39m in 766ms
+ GET /api/courses [32m200[39m in 631ms
+ GET /api/courses [32m200[39m in 674ms
+ GET /api/courses [32m200[39m in 667ms
+ GET /api/courses [32m200[39m in 652ms
+ GET /api/courses [32m200[39m in 693ms
+ GET /api/courses [32m200[39m in 843ms
+ GET /api/courses [32m200[39m in 728ms
+ GET /api/courses [32m200[39m in 692ms
+ GET /api/courses [32m200[39m in 590ms
+ GET /api/courses [32m200[39m in 684ms
+ GET /api/courses [32m200[39m in 775ms
+ GET /api/courses [32m200[39m in 772ms
+ GET /api/courses [32m200[39m in 1076ms
+ GET /api/courses [32m200[39m in 773ms
+ GET /api/courses [32m200[39m in 661ms
+ GET /api/courses [32m200[39m in 649ms
+ GET /api/courses [32m200[39m in 627ms
+ GET /api/courses [32m200[39m in 733ms
+ GET /api/courses [32m200[39m in 663ms
+ GET /api/courses [32m200[39m in 1568ms
+ GET /api/courses [32m200[39m in 693ms
+ GET /api/courses [32m200[39m in 711ms
+ GET /api/courses [32m200[39m in 614ms
+ GET /api/courses [32m200[39m in 619ms
+ GET /api/courses [32m200[39m in 684ms
+ GET /api/courses [32m200[39m in 704ms
+ GET /api/courses [32m200[39m in 699ms
+ GET /api/courses [32m200[39m in 658ms
+ GET /api/courses [32m200[39m in 882ms
+ GET /api/courses [32m200[39m in 687ms
+ GET /api/courses [32m200[39m in 750ms
+ GET /api/courses [32m200[39m in 686ms
+ GET /api/courses [32m200[39m in 741ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /api/courses [32m200[39m in 760ms
+ GET /courses [32m200[39m in 177ms
+ GET /api/courses [32m200[39m in 660ms
+ GET /api/courses [32m200[39m in 609ms
+ GET /api/courses [32m200[39m in 634ms
+ GET /api/courses [32m200[39m in 474ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 248ms
+ GET /api/user-progress? [32m200[39m in 448ms
+ GET /api/courses [32m200[39m in 706ms
+ GET /api/user-progress? [32m200[39m in 481ms
+ GET /api/courses [32m200[39m in 653ms
+ GET /api/courses [32m200[39m in 737ms
+ GET /api/courses [32m200[39m in 788ms
+ GET /api/courses [32m200[39m in 815ms
+ GET /api/courses [32m200[39m in 870ms
+ GET /api/courses [32m200[39m in 687ms
+ GET /api/courses [32m200[39m in 760ms
+ GET /api/courses [32m200[39m in 838ms
+ GET /api/courses [32m200[39m in 801ms
+ GET /api/courses [32m200[39m in 731ms
+ GET /api/courses [32m200[39m in 699ms
+ GET /api/courses [32m200[39m in 728ms
+ GET /api/courses [32m200[39m in 711ms
+ GET /api/courses [32m200[39m in 747ms
+ GET /api/courses [32m200[39m in 789ms
+ GET /api/courses [32m200[39m in 778ms
+ GET /api/courses [32m200[39m in 686ms
+ GET /api/courses [32m200[39m in 664ms
+ GET /api/courses [32m200[39m in 642ms
+ GET /api/courses [32m200[39m in 693ms
+ GET /api/courses [32m200[39m in 798ms
+ GET /api/courses [32m200[39m in 672ms
+ GET /api/courses [32m200[39m in 653ms
+ GET /api/courses [32m200[39m in 760ms
+ GET /api/courses [32m200[39m in 757ms
+ GET /api/courses [32m200[39m in 698ms
+ GET /api/courses [32m200[39m in 741ms
+ GET /api/courses [32m200[39m in 811ms
+ GET /api/courses [32m200[39m in 726ms
+ GET /api/courses [32m200[39m in 686ms
+ GET /api/courses [32m200[39m in 759ms
+ GET /api/courses [32m200[39m in 698ms
+ GET /api/courses [32m200[39m in 739ms
+ GET /api/courses [32m200[39m in 925ms
+ GET /api/courses [32m200[39m in 702ms
+ GET /api/courses [32m200[39m in 617ms
+ GET /api/courses [32m200[39m in 678ms
+ GET /api/courses [32m200[39m in 741ms
+ GET /api/courses [32m200[39m in 645ms
+ GET /api/courses [32m200[39m in 668ms
+ GET /api/courses [32m200[39m in 771ms
+ GET /api/courses [32m200[39m in 739ms
+ GET /api/courses [32m200[39m in 681ms
+ GET /api/courses [32m200[39m in 697ms
+ GET /api/courses [32m200[39m in 667ms
+ GET /api/courses [32m200[39m in 665ms
+
+[2m[48.71ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.06ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 1.15ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[33.03ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 9.46ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 2.12ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 2.54ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.66ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.83ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.76ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.71ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ GET /api/courses [32m200[39m in 778ms
+ GET /api/courses [32m200[39m in 698ms
+ GET /api/courses [32m200[39m in 712ms
+ GET /api/courses [32m200[39m in 735ms
+ GET /api/courses [32m200[39m in 697ms
+ GET /api/courses [32m200[39m in 645ms
+ GET /api/courses [32m200[39m in 699ms
+ GET /api/courses [32m200[39m in 648ms
+ GET /api/courses [32m200[39m in 573ms
+ GET /api/courses [32m200[39m in 692ms
+
+[2m[16.04ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 7.29ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 6.65ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.48ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.27ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.24ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.35ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.62ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.29ms][22m  [2m ↳ [22mBuild utilities
+[2m[1.88ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 61ms
+ GET /api/courses [32m200[39m in 588ms
+ GET /api/courses [32m200[39m in 744ms
+ GET /api/user-progress? [32m200[39m in 383ms
+ GET /api/courses [32m200[39m in 658ms
+ GET /api/courses [32m200[39m in 655ms
+ GET /api/courses [32m200[39m in 610ms
+ GET /api/courses [32m200[39m in 546ms
+ GET /api/courses [32m200[39m in 744ms
+ GET /api/courses [32m200[39m in 633ms
+ GET /api/courses [32m200[39m in 607ms
+ GET /api/courses [32m200[39m in 659ms
+ GET /api/courses [32m200[39m in 580ms
+ GET /api/courses [32m200[39m in 727ms
+ GET /api/courses [32m200[39m in 618ms
+ GET /api/courses [32m200[39m in 672ms
+ GET /api/courses [32m200[39m in 631ms
+ GET /api/courses [32m200[39m in 598ms
+ GET /api/courses [32m200[39m in 716ms
+ GET /api/courses [32m200[39m in 665ms
+ GET /api/courses [32m200[39m in 653ms
+ GET /api/courses [32m200[39m in 795ms
+ GET /api/courses [32m200[39m in 602ms
+ GET /api/courses [32m200[39m in 695ms
+ GET /api/courses [32m200[39m in 665ms
+ GET /api/courses [32m200[39m in 639ms
+ GET /api/courses [32m200[39m in 586ms
+ GET /api/courses [32m200[39m in 761ms
+ GET /api/courses [32m200[39m in 650ms
+ GET /api/courses [32m200[39m in 808ms
+ GET /api/courses [32m200[39m in 653ms
+ GET /api/courses [32m200[39m in 649ms
+ GET /api/courses [32m200[39m in 800ms
+ GET /api/courses [32m200[39m in 657ms
+ GET /api/courses [32m200[39m in 751ms
+ GET /api/courses [32m200[39m in 732ms
+ GET /api/courses [32m200[39m in 678ms
+ GET /api/courses [32m200[39m in 806ms
+ GET /api/courses [32m200[39m in 668ms
+ GET /api/courses [32m200[39m in 696ms
+ GET /api/courses [32m200[39m in 713ms
+ GET /api/courses [32m200[39m in 704ms
+ GET /api/courses [32m200[39m in 658ms
+ GET /api/courses [32m200[39m in 712ms
+ GET /api/courses [32m200[39m in 670ms
+ GET /api/courses [32m200[39m in 679ms
+ GET /api/courses [32m200[39m in 718ms
+ GET /api/courses [32m200[39m in 624ms
+ GET /api/courses [32m200[39m in 609ms
+ GET /api/courses [32m200[39m in 731ms
+ GET /api/courses [32m200[39m in 687ms
+ GET /api/courses [32m200[39m in 624ms
+ GET /api/courses [32m200[39m in 713ms
+ GET /api/courses [32m200[39m in 603ms
+ GET /api/courses [32m200[39m in 728ms
+ GET /api/courses [32m200[39m in 625ms
+ GET /api/courses [32m200[39m in 646ms
+ GET /api/courses [32m200[39m in 739ms
+ GET /api/courses [32m200[39m in 662ms
+ GET /api/courses [32m200[39m in 695ms
+ GET /api/courses [32m200[39m in 646ms
+ GET /api/courses [32m200[39m in 645ms
+ GET /api/courses [32m200[39m in 771ms
+ GET /api/courses [32m200[39m in 698ms
+ GET /api/courses [32m200[39m in 657ms
+ GET /api/courses [32m200[39m in 642ms
+ GET /api/courses [32m200[39m in 721ms
+ GET /api/courses [32m200[39m in 670ms
+ GET /api/courses [32m200[39m in 643ms
+
+[2m[8.59ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.97ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.19ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.90ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.40ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.29ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.83ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.39ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.71ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 37ms
+ GET /api/courses [32m200[39m in 808ms
+ GET /api/user-progress? [32m200[39m in 473ms
+ GET /api/courses [32m200[39m in 612ms
+ GET /api/courses [32m200[39m in 638ms
+
+[2m[130.88ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[  0.05ms][22m  [2m ↳ [22mQuick bail check
+[2m[  1.97ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 82.54ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 34.70ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[  0.67ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 10.59ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.41ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.13ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[5.27ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.72ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.27ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.98ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 222ms
+ GET /api/courses [32m200[39m in 769ms
+ GET /api/user-progress? [32m200[39m in 468ms
+ GET /api/courses [32m200[39m in 628ms
+ GET /api/courses [32m200[39m in 675ms
+
+[2m[7.92ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.51ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.20ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.85ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.79ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.82ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.43ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[1.19ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.33ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[6.64ms][22m  [2m ↳ [22mScan for candidates
+[2m[1.99ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.36ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.96ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.32ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[5.21ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.72ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.35ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 38ms
+ GET /api/user-progress? [32m200[39m in 563ms
+ GET /api/courses [32m200[39m in 804ms
+ GET /api/courses [32m200[39m in 662ms
+
+[2m[8.87ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[5.37ms][22m  [2m ↳ [22mScan for candidates
+[2m[1.94ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.99ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.43ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[5.60ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.44ms][22m  [2m ↳ [22mScan for candidates
+[2m[1.87ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.59ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.62ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 32ms
+ GET /api/courses [32m200[39m in 843ms
+ GET /api/user-progress? [32m200[39m in 572ms
+ GET /api/courses [32m200[39m in 636ms
+
+[2m[9.47ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.62ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.62ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.69ms][22m  [2m ↳ [22mBuild utilities
+[2m[1.43ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[7.06ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.33ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.82ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.23ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.60ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ GET /api/user-progress? [32m200[39m in 495ms
+ GET /api/courses [32m200[39m in 674ms
+ [32m[1m✓[22m[39m Compiled /courses/[slug] in 170ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses/[slug]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses/hazmat-function-specific [32m200[39m in 514ms
+ GET /api/user-progress? [32m200[39m in 401ms
+ GET /api/courses [32m200[39m in 683ms
+ GET /api/user-progress? [32m200[39m in 467ms
+ GET /api/courses [32m200[39m in 590ms
+ GET /api/user-progress? [32m200[39m in 468ms
+ GET /api/user-progress? [32m200[39m in 394ms
+ GET /api/user-progress? [32m200[39m in 451ms
+ GET /api/courses [32m200[39m in 691ms
+ GET /api/user-progress? [32m200[39m in 464ms
+ GET /api/courses [32m200[39m in 636ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses/[slug]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses/function-specific-hazmat-training [32m200[39m in 48ms
+ GET /api/user-progress? [32m200[39m in 424ms
+ GET /api/courses [32m200[39m in 710ms
+ GET /api/user-progress? [32m200[39m in 466ms
+ GET /api/courses [32m200[39m in 555ms
+ GET /api/user-progress? [32m200[39m in 448ms
+ GET /api/user-progress? [32m200[39m in 402ms
+ GET /api/user-progress? [32m200[39m in 438ms
+ GET /api/courses [32m200[39m in 646ms
+ GET /api/user-progress? [32m200[39m in 455ms
+ GET /api/courses [32m200[39m in 608ms
+ GET /api/user-progress? [32m200[39m in 443ms
+ GET /api/courses [32m200[39m in 685ms
+
+[2m[43.62ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.02ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.70ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 8.28ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 5.06ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[23.00ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 4.09ms][22m  [2m ↳ [22mTransform Tailwind CSS AST into PostCSS AST
+[2m[ 2.27ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[15.82ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 7.22ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 7.11ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.35ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.96ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 120ms
+
+[2m[12.10ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 3.49ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 6.62ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.61ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[14.99ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 4.25ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 6.96ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 2.98ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.66ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[7.81ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.57ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.10ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.32ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.72ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[20.46ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 4.90ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.96ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 9.63ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 2.58ms][22m  [2m ↳ [22mTransform Tailwind CSS AST into PostCSS AST
+[2m[ 0.26ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.14ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.77ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.29ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.53ms][22m  [2m ↳ [22mBuild utilities
+[2m[1.44ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 49ms
+
+[2m[8.04ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.39ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.83ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.32ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.39ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[20.17ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.55ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.10ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 8.71ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 2.58ms][22m  [2m ↳ [22mTransform Tailwind CSS AST into PostCSS AST
+[2m[ 0.98ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[6.08ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.78ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.29ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.29ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.64ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 43ms
+ [32m[1m✓[22m[39m Compiled middleware in 1ms
+
+[2m[8.94ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.49ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.71ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.29ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.33ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[13.22ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 4.42ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.06ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 4.65ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.04ms][22m  [2m ↳ [22mTransform Tailwind CSS AST into PostCSS AST
+[2m[ 0.92ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.00ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.03ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.21ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.84ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.58ms][22m  [2m ↳ [22mBuild utilities
+[2m[1.29ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 45ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 138ms
+ [32m[1m✓[22m[39m Compiled middleware in 0ms
+
+[2m[10.49ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.59ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.84ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.31ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.61ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[20.66ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.03ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 3.92ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.91ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 9.11ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 2.92ms][22m  [2m ↳ [22mTransform Tailwind CSS AST into PostCSS AST
+[2m[ 1.69ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.27ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.71ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.46ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.49ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.44ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 54ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 96ms
+
+[2m[12.58ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.09ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 7.08ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.60ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.28ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.47ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[5.68ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[2.69ms][22m  [2m ↳ [22mScan for candidates
+[2m[1.70ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.96ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 43ms
+
+[2m[6.83ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.11ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.06ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[1.31ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.28ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[27.57ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[14.02ms][22m  [2m ↳ [22mScan for candidates
+[2m[10.52ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.14ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.72ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled middleware in 1ms
+
+[2m[15.18ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.08ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 6.57ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 6.85ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.65ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.91ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[9.58ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.43ms][22m  [2m ↳ [22mScan for candidates
+[2m[3.95ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[1.53ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.58ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[5.69ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.05ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[3.13ms][22m  [2m ↳ [22mScan for candidates
+[2m[1.91ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.25ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.31ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 121ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 174ms
+ [32m[1m✓[22m[39m Compiled middleware in 1ms
+
+[2m[10.92ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 4.27ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 5.44ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.29ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.83ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[11.29ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 6.03ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 3.03ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.85ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.28ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[10.83ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.04ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 6.56ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 3.61ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.26ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.31ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 80ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses [32m200[39m in 56ms
+
+[2m[7.57ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.36ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.45ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.30ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.36ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[18.12ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 6.52ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 3.43ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 6.18ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.56ms][22m  [2m ↳ [22mTransform Tailwind CSS AST into PostCSS AST
+[2m[ 0.30ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[12.97ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.11ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.97ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.29ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.41ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 2.09ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ [32m[1m✓[22m[39m Compiled in 53ms
+
+[2m[10.45ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.10ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 5.11ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 2.70ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 1.62ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 0.83ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[8.05ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[0.03ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[4.16ms][22m  [2m ↳ [22mScan for candidates
+[2m[2.97ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[0.27ms][22m  [2m ↳ [22mBuild utilities
+[2m[0.57ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[56.35ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.00ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 2.96ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[33.30ms][22m  [2m ↳ [22mScan for candidates
+[2m[14.70ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 0.95ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 4.00ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+
+[2m[55.97ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.01ms][22m  [2m ↳ [22mQuick bail check
+[2m[ 0.07ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[43.94ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 8.13ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[ 2.71ms][22m  [2m ↳ [22mBuild utilities
+[2m[ 1.03ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ GET /api/user-progress? [32m200[39m in 740ms
+ GET /api/courses [32m200[39m in 967ms
+ [33m[1m⚠[22m[39m Unsupported metadata viewport is configured in metadata export in /courses/[slug]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+ GET /courses/hazmat-function-specific [32m200[39m in 87ms
+ GET /api/user-progress? [32m200[39m in 418ms
+ GET /api/user-progress? [32m200[39m in 403ms
+ GET /api/courses [32m200[39m in 992ms
+ GET /api/user-progress? [32m200[39m in 502ms
+ GET /api/courses [32m200[39m in 617ms
+ GET /api/user-progress? [32m200[39m in 419ms
+ [32m[1m✓[22m[39m Compiled /courses/[slug]/learn in 215ms
+ [31m[1m⨯[22m[39m ./apps/safety-lms/src/components/ui/radio-group.tsx:4:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'@radix-ui/react-radio-group'[39m
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mRadioGroupPrimitive[39m [36mfrom[39m [32m"@radix-ui/react-radio-group"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCircle[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mimport[39m { cn } [36mfrom[39m [32m"@/lib/utils"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./apps/safety-lms/src/components/ui/radio-group.tsx [Client Component Browser]
+    ./apps/safety-lms/src/components/quiz/QuizQuestion.tsx [Client Component Browser]
+    ./apps/safety-lms/src/app/courses/[slug]/learn/page.tsx [Client Component Browser]
+    ./apps/safety-lms/src/app/courses/[slug]/learn/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/safety-lms/src/components/ui/radio-group.tsx [Client Component SSR]
+    ./apps/safety-lms/src/components/quiz/QuizQuestion.tsx [Client Component SSR]
+    ./apps/safety-lms/src/app/courses/[slug]/learn/page.tsx [Client Component SSR]
+    ./apps/safety-lms/src/app/courses/[slug]/learn/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /courses/hazmat-function-specific/learn [31m500[39m in 240ms
+[?25h

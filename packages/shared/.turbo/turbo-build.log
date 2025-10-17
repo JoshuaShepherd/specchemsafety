@@ -1,0 +1,22 @@
+
+> @specchem/shared@0.1.0 build /Users/joshshepherd/Projects/specchem-safety-v2-main/packages/shared
+> tsup
+
+CLI Building entry: src/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.0
+CLI Using tsup config: /Users/joshshepherd/Projects/specchem-safety-v2-main/packages/shared/tsup.config.ts
+CLI Target: es2022
+CLI Cleaning output folder
+CJS Build start
+ESM Build start
+CJS dist/index.cjs     2.12 KB
+CJS dist/index.cjs.map 1.73 KB
+CJS ⚡️ Build success in 5ms
+ESM dist/index.js     928.00 B
+ESM dist/index.js.map 1.67 KB
+ESM ⚡️ Build success in 5ms
+DTS Build start
+DTS ⚡️ Build success in 378ms
+DTS dist/index.d.cts 801.00 B
+DTS dist/index.d.ts  801.00 B

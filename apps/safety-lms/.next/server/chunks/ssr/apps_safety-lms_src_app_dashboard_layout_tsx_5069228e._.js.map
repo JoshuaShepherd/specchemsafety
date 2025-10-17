@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jshepherd/OneDrive%20-%20SpecChem%2C%20LLC/Desktop/specchem-safety-lms-v2-main/apps/safety-lms/src/app/dashboard/layout.tsx"],"sourcesContent":["export default function DashboardLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <div className=\"min-h-screen bg-background\">\n      <main className=\"container mx-auto px-4 py-6\">{children}</main>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS,gBAAgB,EACtC,QAAQ,EAGT;IACC,qBACE,6WAAC;QAAI,WAAU;kBACb,cAAA,6WAAC;YAAK,WAAU;sBAA+B;;;;;;;;;;;AAGrD","debugId":null}}]
+}

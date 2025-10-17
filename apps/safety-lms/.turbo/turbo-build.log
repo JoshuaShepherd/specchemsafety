@@ -1,0 +1,43 @@
+
+> @specchem/safety@0.1.0 build /Users/joshshepherd/Projects/specchem-safety-v2-main/apps/safety-lms
+> next build --turbopack
+
+   ▲ Next.js 15.5.4 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+
+[2m[71.12ms][22m [@tailwindcss/postcss] src/app/globals.css
+[2m[ 0.03ms][22m  [2m ↳ [22mQuick bail check
+[2m[10.83ms][22m  [2m ↳ [22mSetup compiler
+[2m[ 0.19ms][22m    [2m ↳ [22mPostCSS AST -> Tailwind CSS AST
+[2m[10.63ms][22m    [2m ↳ [22mCreate compiler
+[2m[ 0.06ms][22m  [2m ↳ [22mRegister full rebuild paths
+[2m[ 4.30ms][22m  [2m ↳ [22mSetup scanner
+[2m[ 7.83ms][22m  [2m ↳ [22mScan for candidates
+[2m[ 4.45ms][22m  [2m ↳ [22mRegister dependency messages
+[2m[19.78ms][22m  [2m ↳ [22mBuild utilities
+[2m[22.14ms][22m  [2m ↳ [22mOptimization
+[2m[ 0.80ms][22m    [2m ↳ [22mAST -> CSS
+[2m[18.21ms][22m    [2m ↳ [22mLightning CSS
+[2m[ 3.11ms][22m    [2m ↳ [22mCSS -> PostCSS AST
+[2m[ 1.47ms][22m  [2m ↳ [22mUpdate PostCSS AST
+
+ ✓ Finished writing to disk in 162ms
+ ✓ Compiled successfully in 2.0s
+   Linting and checking validity of types ...
+ ⚠ TypeScript project references are not fully supported. Attempting to build in incremental mode.
+Failed to compile.
+
+./src/lib/validations/validation-utils.ts:161:12
+Type error: Cannot find name 'BusinessRule'.
+
+[0m [90m 159 |[39m   validateBusinessRules[33m:[39m (
+ [90m 160 |[39m     entity[33m:[39m any[33m,[39m
+[31m[1m>[22m[39m[90m 161 |[39m     rules[33m:[39m [33mBusinessRule[39m[]
+ [90m     |[39m            [31m[1m^[22m[39m
+ [90m 162 |[39m   )[33m:[39m [33mValidationResult[39m [33m=>[39m {
+ [90m 163 |[39m     [36mconst[39m errors[33m:[39m [33mValidationError[39m[] [33m=[39m [][33m;[39m
+ [90m 164 |[39m[0m
+Next.js build worker exited with code: 1 and signal: null
+ ELIFECYCLE  Command failed with exit code 1.
