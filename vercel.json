@@ -2,8 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "pnpm --filter @specchem/safety build",
   "installCommand": "pnpm install --frozen-lockfile",
-  "framework": "nextjs",
-  "outputDirectory": "apps/safety-lms/.next",
+  "framework": null,
   "regions": ["iad1"],
   "functions": {
     "apps/safety-lms/src/app/api/**/*.ts": {
