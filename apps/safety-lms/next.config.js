@@ -6,12 +6,17 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Force all pages to be dynamic to skip static generation completely
+  // Disable Turbo completely
   experimental: {
     serverActions: {
       bodySizeLimit: '2mb',
     },
+    turbo: {
+      rules: {},
+    },
   },
+  // Force Next.js 14 behavior
+  swcMinify: true,
   // Disable static optimization for all pages
   output: 'standalone',
   trailingSlash: true,
