@@ -1,10 +1,5 @@
 {
-  "functions": {
-    "apps/safety-lms/src/app/**": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "buildCommand": "cd apps/safety-lms && npm run build",
+  "buildCommand": "pnpm --filter @specchem/safety build",
   "outputDirectory": "apps/safety-lms/.next",
   "installCommand": "pnpm install",
   "framework": "nextjs",
