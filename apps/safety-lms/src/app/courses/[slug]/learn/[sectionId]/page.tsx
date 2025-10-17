@@ -133,7 +133,7 @@ export default function SectionLearningPage() {
           Course Not Found
         </h3>
         <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-          The course you're looking for doesn't exist or has been removed.
+          The course you&apos;re looking for doesn&apos;t exist or has been removed.
         </p>
         <Button onClick={() => router.push("/courses")}>Back to Courses</Button>
       </div>
@@ -149,7 +149,7 @@ export default function SectionLearningPage() {
           Section Not Found
         </h3>
         <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-          The section you're looking for doesn't exist or has been removed.
+          The section you&apos;re looking for doesn&apos;t exist or has been removed.
         </p>
         <Button onClick={() => router.push(`/courses/${slug}/learn`)}>Back to Course</Button>
       </div>
@@ -165,7 +165,7 @@ export default function SectionLearningPage() {
           Content Coming Soon
         </h3>
         <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-          This section doesn't have any content yet. Content is being prepared.
+          This section doesn&apos;t have any content yet. Content is being prepared.
         </p>
         <Button onClick={() => router.push(`/courses/${slug}/learn`)}>Back to Course</Button>
       </div>

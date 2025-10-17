@@ -100,7 +100,7 @@ function RegisterForm() {
             Request Training Portal Access
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            Submit your information to request access to SpecChem's safety training portal
+            Submit your information to request access to SpecChem&apos;s safety training portal
           </p>
         </div>
 

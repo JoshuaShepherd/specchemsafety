@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useUser } from "@/hooks/useUser";
 import {
   Card,
@@ -258,12 +259,12 @@ export default function ProgressPage() {
                 You haven&apos;t enrolled in any courses yet. Browse available
                 courses to get started.
               </p>
-              <a
+              <Link
                 href="/courses"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
               >
                 Browse Courses
-              </a>
+              </Link>
             </CardContent>
           </Card>
         )}

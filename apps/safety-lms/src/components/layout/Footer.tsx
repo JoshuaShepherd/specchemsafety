@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
@@ -31,12 +32,12 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Links</h3>
             <div className="space-y-2">
-              <a
+              <Link
                 href="/"
                 className="block text-sm text-neutral-400 hover:text-white transition-colors"
               >
                 Home
-              </a>
+              </Link>
               <a
                 href="/dashboard"
                 className="block text-sm text-neutral-400 hover:text-white transition-colors"

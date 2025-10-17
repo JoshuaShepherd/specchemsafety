@@ -342,7 +342,7 @@ function QuoteBlock({ content, metadata }: { content: any; metadata?: any }) {
 
   return (
     <div className="border-l-4 border-primary bg-muted/30 rounded-r-lg p-6 mb-6">
-      <blockquote className="text-lg italic mb-4">"{quote}"</blockquote>
+      <blockquote className="text-lg italic mb-4">&ldquo;{quote}&rdquo;</blockquote>
       {author && (
         <div className="flex items-center gap-2">
           <Quote className="h-4 w-4 text-muted-foreground" />

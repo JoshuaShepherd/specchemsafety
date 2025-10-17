@@ -63,7 +63,7 @@ export default async function CourseLearningPage({
           Course Content Coming Soon
         </h3>
         <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-          This course doesn't have any sections yet. Content is being prepared.
+          This course doesn&apos;t have any sections yet. Content is being prepared.
         </p>
       </div>
     );

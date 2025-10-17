@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { StatsSection } from "@/components/sections/StatsSection";
@@ -160,7 +161,7 @@ export default function HomePage() {
                 Complete your assigned training modules to maintain OSHA compliance and workplace safety standards
               </p>
               <Button variant="outline" className="px-8" asChild>
-                <a href="/courses">View All Training</a>
+                <Link href="/courses">View All Training</Link>
               </Button>
             </div>
 
@@ -234,7 +235,7 @@ export default function HomePage() {
                 Browse safety training modules by category to find the specific training you need for your role
               </p>
               <Button variant="outline" className="px-8" asChild>
-                <a href="/courses">All Training Modules</a>
+                <Link href="/courses">All Training Modules</Link>
               </Button>
             </div>
 

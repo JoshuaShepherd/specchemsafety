@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useUser } from "@/hooks/useUser";
 import { useAuth } from "@/hooks/useAuth";
 import { useDashboardStats } from "@/hooks/useDashboardStats";
@@ -250,10 +251,10 @@ export default function DashboardPage() {
               asChild
               className="h-20 flex-col space-y-2 bg-primary-500 hover:bg-primary-600"
             >
-              <a href="/courses">
+              <Link href="/courses">
                 <BookOpen className="h-6 w-6" />
                 <span className="font-medium">View Courses</span>
-              </a>
+              </Link>
             </Button>
 
             {permissions?.canViewReports && (
