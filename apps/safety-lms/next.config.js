@@ -1,27 +1,43 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable TypeScript and ESLint checks during build (IMPORTANT for production)
   typescript: {
-    ignoreBuildErrors: true,
+    // Only ignore build errors in development if absolutely necessary
+    ignoreBuildErrors: process.env.NODE_ENV === 'development',
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    // Only ignore linting in development if absolutely necessary
+    ignoreDuringBuilds: process.env.NODE_ENV === 'development',
   },
-  // Disable Turbo completely
+  // Server Actions configuration
   experimental: {
     serverActions: {
       bodySizeLimit: '2mb',
     },
-    turbo: {
-      rules: {},
-    },
   },
-  // Force Next.js 14 behavior
+  // Enable SWC minification for better performance
   swcMinify: true,
-  // Disable static optimization for all pages
+  // Standalone output for Docker/Vercel deployment
   output: 'standalone',
+  // Trailing slash configuration
   trailingSlash: true,
-  // Force dynamic rendering
+  // Image optimization
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'radbukphijxenmgiljtu.supabase.co',
+        pathname: '/storage/v1/object/**',
+      },
+    ],
+  },
+  // Disable static params generation for fully dynamic routes
   generateStaticParams: false,
+  // Environment variables validation
+  env: {
+    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+  },
 };
 
 module.exports = nextConfig;

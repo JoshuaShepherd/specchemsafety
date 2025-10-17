@@ -1,13 +1,23 @@
 {
-  "buildCommand": "pnpm --filter @specchem/safety build",
-  "outputDirectory": ".next",
-  "installCommand": "pnpm install",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install --frozen-lockfile",
   "framework": "nextjs",
   "regions": ["iad1"],
-  "env": {
-    "TURBO_TOKEN": "",
-    "TURBO_TEAM": "",
-    "TURBO_REMOTE_CACHE": "false"
+  "functions": {
+    "apps/safety-lms/src/app/api/**/*.ts": {
+      "maxDuration": 10
+    }
   },
-  "version": 3
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, must-revalidate"
+        }
+      ]
+    }
+  ]
 }
