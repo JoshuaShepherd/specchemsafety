@@ -18,7 +18,7 @@ import {
   Building,
 } from "lucide-react";
 import { useCourses } from "@/hooks/useCourses";
-import { useUser } from "@/hooks/useUser";
+import { useAuth } from "@/hooks/useAuth";
 
 export default function CourseCompletePage() {
   const params = useParams();
