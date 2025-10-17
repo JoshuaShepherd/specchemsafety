@@ -138,7 +138,7 @@ export default function CourseCompletePage() {
                 <div>
                   <p className="font-medium">Plant</p>
                   <p className="text-sm text-muted-foreground">
-                    {profile?.plantId || 'N/A'}
+                    {profile?.plant_id || 'N/A'}
                   </p>
                 </div>
               </div>
