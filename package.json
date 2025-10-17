@@ -8,9 +8,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "cd apps/safety-lms && npm run build",
-    "dev": "cd apps/safety-lms && npm run dev",
-    "start": "cd apps/safety-lms && npm run start"
+    "build": "pnpm --filter @specchem/safety build",
+    "dev": "pnpm --filter @specchem/safety dev",
+    "start": "pnpm --filter @specchem/safety start"
   },
   "engines": {
     "node": ">=18.0.0"
