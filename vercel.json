@@ -1,10 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd apps/safety-lms && pnpm build",
-  "devCommand": "cd apps/safety-lms && pnpm dev",
-  "installCommand": "pnpm install",
-  "framework": "nextjs",
-  "outputDirectory": "apps/safety-lms/.next",
   "github": {
     "enabled": true,
     "autoAlias": true,
