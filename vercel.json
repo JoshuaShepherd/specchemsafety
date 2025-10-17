@@ -1,42 +1,12 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "apps/safety-lms/src/app/**": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "buildCommand": "pnpm --filter @specchem/safety build",
   "outputDirectory": "apps/safety-lms/.next",
   "installCommand": "pnpm install",
-  "devCommand": "pnpm --filter @specchem/safety dev",
-  "framework": null,
-  "github": {
-    "enabled": true,
-    "autoAlias": true,
-    "silent": false,
-    "autoJobCancelation": true
-  },
-  "git": {
-    "deploymentEnabled": {
-      "main": true
-    }
-  },
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        }
-      ]
-    }
-  ]
+  "framework": "nextjs",
+  "regions": ["iad1"]
 }
