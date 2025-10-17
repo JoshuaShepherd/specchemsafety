@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter @specchem/safety build",
-  "outputDirectory": "apps/safety-lms/.next",
+  "outputDirectory": ".next",
   "installCommand": "pnpm install",
   "framework": "nextjs",
   "regions": ["iad1"],
@@ -9,5 +9,5 @@
     "TURBO_TEAM": "",
     "TURBO_REMOTE_CACHE": "false"
   },
-  "version": 2
+  "version": 3
 }
