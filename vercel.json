@@ -1,5 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm --filter @specchem/safety build",
+  "outputDirectory": "apps/safety-lms/.next",
+  "installCommand": "pnpm install",
+  "devCommand": "pnpm --filter @specchem/safety dev",
+  "framework": null,
   "github": {
     "enabled": true,
     "autoAlias": true,
