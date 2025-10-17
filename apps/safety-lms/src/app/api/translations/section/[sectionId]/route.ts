@@ -17,7 +17,7 @@ import { eq } from "drizzle-orm";
  */
 export async function GET(
   request: NextRequest,
-  { params }: { params: { sectionId: string } }
+  { params }: { params: Promise<{ sectionId: string }> }
 ) {
   try {
     // Temporarily remove auth requirement for testing
@@ -29,7 +29,7 @@ export async function GET(
     //   );
     // }
 
-    const { sectionId } = params;
+    const { sectionId } = await params;
     const { searchParams } = new URL(request.url);
     const language = searchParams.get("language") as "en" | "es" | "fr" | "de" | null;
 

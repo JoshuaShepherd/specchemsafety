@@ -11,7 +11,7 @@ import {
  */
 export async function GET(
   request: NextRequest,
-  { params }: { params: { courseId: string } }
+  { params }: { params: Promise<{ courseId: string }> }
 ) {
   try {
     // Temporarily remove auth requirement for testing
@@ -23,7 +23,7 @@ export async function GET(
     //   );
     // }
 
-    const { courseId } = params;
+    const { courseId } = await params;
     const { searchParams } = new URL(request.url);
     const language = searchParams.get("language") as "en" | "es" | "fr" | "de" | null;
 
