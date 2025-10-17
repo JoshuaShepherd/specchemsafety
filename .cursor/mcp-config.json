@@ -3,12 +3,10 @@
   "description": "Model Context Protocol configuration for SpecChem Safety LMS",
   "mcpServers": {
     "gitkraken": {
-      "command": "npx",
-      "args": ["-y", "@gitkraken/mcp-server"],
+      "command": "gk",
+      "args": ["mcp", "server"],
       "description": "GitKraken MCP provides Git operations with AI assistance",
       "enabled": true
     }
   }
 }
-
-
