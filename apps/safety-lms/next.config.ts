@@ -7,11 +7,11 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  output: 'export',
-  distDir: '.next',
-  trailingSlash: true,
-  images: {
-    unoptimized: true,
+  // Force all pages to be dynamic to skip static generation completely
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '2mb',
+    },
   },
 };
 
